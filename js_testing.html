@@ -1,0 +1,74 @@
+<!-- Styles -->
+
+    
+    <!-- Resources -->
+    <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    
+    <!-- Chart code -->
+    <script>
+
+var mysql = require('mysql');
+
+var con = mysql.createConnection({
+  host: "localhost",
+  user: "myusername",
+  password: "mypassword"
+});
+
+con.connect(function(err) {
+  if (err) throw err;
+  console.log("Connected!");
+});
+
+
+    var a =[2,5,3,8]
+    console.log(a)
+    var b=a.sort()
+    console.log(b);
+    var c=b.splice(2,4);
+    
+    var allData=[
+    {'network': "KUW", 'MAU': 100},
+    {'network': "LAT", 'MAU': 7},
+    {'network': "LIB", 'MAU': 41},
+    {'network': "LTU", 'MAU': 0},
+    {'network': "LUX", 'MAU': 12},
+    {'network': "MAR", 'MAU': 0},
+    {'network': "MAS", 'MAU': 6},
+    {'network': "MDA", 'MAU': 21},
+    {'network': "MEX", 'MAU': 2},
+    {'network': "MGL", 'MAU': 0},
+    ];
+
+
+     
+     var d=allData.slice(0).sort((a, b) => (a.MAU > b.MAU) ? 1 : -1);
+
+    console.log(d);
+
+    //so I'll need to sort it but not change the original array - and for the year change it back to 0?
+    //makes a duplicate array to push in so it does not mess up original
+    var tenC=[];
+    for (i=0;i<allData.length-3; i++){
+        tenC.push(d[i]['network'])
+    }
+
+    console.log(d[0]['network'])
+    //var tenC=[d.slice(0,1)[0]['network'],d.slice(1,2)[0]['network'],d.slice(2,3)[0]['network']];
+
+    console.log(tenC)
+    tenC.forEach(row=>{
+        
+        index = allData.findIndex(x => x.network ===row);
+        
+        allData[index].MAU=0;
+    });
+    console.log(allData)
+    </script>
+    
+    <!-- HTML -->
+    <div id="chartdiv"></div>
+    
