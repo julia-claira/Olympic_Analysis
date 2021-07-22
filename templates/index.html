@@ -7,6 +7,7 @@
 </style>
 
 
+
 <!-- HTML -->
 
 <!DOCTYPE html>
@@ -22,6 +23,15 @@
   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
   crossorigin="" />
   <!--<link rel="stylesheet" type="text/css" href="style.css">-->
+
+  <!--Code to bring db into my js bar race chart-->
+  <script type="text/javascript">
+  var bar_race_db = {{race_db|tojson|safe}}
+  </script>
+
+
+
+  
 </head>
 
 <body>
@@ -99,7 +109,7 @@
   crossorigin=""></script>
 
  
-  <script src="js/barRace.js"></script>
+  <script src="static/barRace.js"></script>
   
   
 </body>

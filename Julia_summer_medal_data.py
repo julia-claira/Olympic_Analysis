@@ -8,7 +8,7 @@ from sqlalchemy import create_engine, inspect
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 import numpy as np
-from flask import Flask, render_template, redirect
+ffrom flask import Flask, render_template, redirect
 
 #create app
 app = Flask(__name__)
@@ -20,7 +20,7 @@ app = Flask(__name__)
 def index():
 
     #path to sqlite
-    database_path= "data/Olympics.sqlite"
+    database_path= "../data/Olympics.sqlite"
 
     #create engine to db
     engine = create_engine(f"sqlite:///{database_path}")
@@ -198,13 +198,13 @@ def index():
         "YUG": "Yugoslavia",
         "ZAM": "Zambia",
         "ZIM": "Zimbabwe"
-    }
+    };
 
 
     #setup db of coutnries
     countryNames=pd.DataFrame({
-        "NOC":list(country_ISO_List.keys()),
-        "Name":list(country_ISO_List.values())
+        "NOC":country_ISO_List.keys(),
+        "Name":country_ISO_List.values()
     })
 
     #merged newly created country-name db with olympics
@@ -219,7 +219,7 @@ def index():
     #sort by country and year, which I now realize i did prematurely earlier
     db_merged.sort_values(['Year','Country'],inplace=True)
 
-    return render_template("index.html", race_db=db_merged.to_json(orient='table',index=False))
+    return render_template("index.html", race_db=db_merged)
 
 if __name__ == "__main__":
     app.run(debug=True)

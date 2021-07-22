@@ -1,12 +1,19 @@
 
 //Julia's Code Start-------------------------------------------------------------------------
     
-    var olympicURL = "data/summer_country_medals.csv"; 
-    var countryURL = "data/countries.csv";
+//pull db from flask
+var flaskRace_db=JSON.parse(bar_race_db).data;
+console.log(flaskRace_db[0]);
+
+
+var olympicURL = "static/summer_country_medals.csv"; 
+    var countryURL = "static/countries.csv";
     d3.csv(olympicURL).then((importedData)=>{
       var data = importedData;
       d3.csv(countryURL).then((importedData2)=>{
         var dataC = importedData2;
+        console.log(data[0]);
+        
         
     
         var myYear='1800';//set initial year to before data set
