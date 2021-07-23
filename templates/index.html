@@ -26,7 +26,8 @@
 
   <!--Code to bring db into my js bar race chart-->
   <script type="text/javascript">
-  var bar_race_db = {{race_db|tojson|safe}}
+  var bar_race_db = {{the_data['julia']|tojson|safe}}//julia's information from flask
+  
   </script>
 
 

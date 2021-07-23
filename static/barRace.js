@@ -4,8 +4,57 @@
 //pull db from flask
 var flaskRace_db=JSON.parse(bar_race_db).data;
 console.log(flaskRace_db[0]);
+//my new code goes here------------------------------------------
+function filterBars(){
+
+  //temp arrays to test 
+  var count=false; // it meets all the conditions add the medal, country, and year
+
+  var filters= [
+    {'summer':true},
+    {'winter':true},
+    {'sex': 'both'},
+    {'gold': true},
+    {'silver': true},
+    {'bronze':true}
+  ];
+
+  var myNew=[];
+   for (i=0;i<flaskRace_db.length;i++){
+      if (myNew.includes(flaskRace_db[i].Name)){}
+      else {myNew.push(flaskRace_db[i].Name)}        
+   }
+   console.log(myNew);
+   //console.log(flaskRace_db.length)
+   flaskRace_db.forEach(row=>{
+    if(row.Season==='Summer'){};
+    if (row.Season==='Winter'){};
+    if (row.Sex==="M" && row.Sex==="F"){};
+    if (row.Medal="Gold"){};
+    if (row.Medal="Silver"){};
+    if (row.Medal="Bronze"){};
+
+   });
+//if add country and medals
+//City: "Athina"
+//Country: "AUS"
+//Medal: "Gold"
+//Medals_Won: 2
+//Name: "Australia"
+//Season: "Summer"
+//Sex: "M"
+//Sport: "Athletics"
+//Year: 1896
+
+//if summer===True
+
+}
+//end result filters into here- [({"network":row.Country,"MAU":value})]
 
 
+
+
+//------------------------------------------
 var olympicURL = "static/summer_country_medals.csv"; 
     var countryURL = "static/countries.csv";
     d3.csv(olympicURL).then((importedData)=>{
@@ -14,7 +63,7 @@ var olympicURL = "static/summer_country_medals.csv";
         var dataC = importedData2;
         console.log(data[0]);
         
-        
+        filterBars()
     
         var myYear='1800';//set initial year to before data set
     
@@ -22,22 +71,26 @@ var olympicURL = "static/summer_country_medals.csv";
     
         allData[myYear]=[];
     
+        //find the unique countries hiere
         dataC.forEach(row =>{
           allData[myYear].push({"network":row.Country,"MAU":0})
         });
     
-    
+        //push intial data for the bar race
         myYear=data[0].Year;
         allData[myYear]=[];
         dataC.forEach(row =>{
           allData[myYear].push({"network":row.Country,"MAU":0})
         });
-    
+        
+        //fill in the data by adding the data for the current year
+        //even if a country has 0 medals, it has to keep the same index throughout
         data.forEach(row => {
           if(row.Year===myYear){
             index = allData[myYear].findIndex(x => x.network ===row.Country);
             allData[myYear][index].MAU=allData[myYear][index].MAU+parseInt(row.Medal)
           }
+          //initiate next year by copying the previous year
           else{
             var previousYear=myYear;
             myYear=row.Year;
