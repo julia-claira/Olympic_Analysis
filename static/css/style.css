@@ -1,0 +1,29 @@
+body {
+  padding: 0;
+  margin: 0;
+  height:100%
+}
+
+h1 {
+  text-align: center;
+  color: #2b5c97
+}
+
+h3 {
+  font-weight: 400;
+  font-size: small;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  size: 100%;
+}
+
+#map {
+  position: relative;
+  border: 1px solid black;
+  border-radius: 8px;
+  height: 500px;  /* or as desired */
+  width: 100%;  /* This means "100% of the width of its container", the .col-md-8 */
+}
