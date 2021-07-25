@@ -1,0 +1,1158 @@
+Year,Country,City,Medal,Medal_Sum
+1896,AUT,Athens,5,5
+1896,GBR,Athens,7,7
+1896,GER,Athens,33,33
+1896,DEN,Athens,6,6
+1896,GRE,Athens,52,52
+1896,SUI,Athens,3,3
+1896,HUN,Athens,6,6
+1896,AUS,Athens,2,2
+1896,ZZX,Athens,6,6
+1896,USA,Athens,20,20
+1896,FRA,Athens,11,11
+1900,BOH,Paris,2,2
+1900,CAN,Paris,2,2
+1900,USA,Paris,55,75
+1900,CUB,Paris,2,2
+1900,AUS,Paris,5,7
+1900,DEN,Paris,6,12
+1900,BEL,Paris,39,39
+1900,ESP,Paris,2,2
+1900,SWE,Paris,1,1
+1900,SUI,Paris,15,18
+1900,FRA,Paris,185,196
+1900,GBR,Paris,78,85
+1900,GER,Paris,40,73
+1900,NED,Paris,20,20
+1900,NOR,Paris,9,9
+1900,ZZX,Paris,34,40
+1900,HUN,Paris,5,11
+1900,AUT,Paris,6,11
+1900,IND,Paris,2,2
+1900,ITA,Paris,4,4
+1904,AUT,St Louis,1,12
+1904,USA,St Louis,394,469
+1904,SUI,St Louis,2,20
+1904,GRE,St Louis,2,54
+1904,CUB,St Louis,9,11
+1904,GER,St Louis,13,86
+1904,GBR,St Louis,2,87
+1904,CAN,St Louis,35,37
+1904,HUN,St Louis,4,15
+1904,ZZX,St Louis,8,48
+1908,ITA,London,7,11
+1908,FIN,London,29,29
+1908,BEL,London,31,70
+1908,NOR,London,44,53
+1908,USA,London,63,532
+1908,HUN,London,18,33
+1908,AUT,London,1,13
+1908,ANZ,London,19,19
+1908,FRA,London,35,231
+1908,BOH,London,5,7
+1908,DEN,London,15,27
+1908,GRE,London,3,57
+1908,SWE,London,98,99
+1908,GER,London,22,108
+1908,RSA,London,2,2
+1908,NED,London,11,31
+1908,RU1,London,3,3
+1908,GBR,London,347,434
+1908,CAN,London,51,88
+1912,CAN,Stockholm,8,96
+1912,FIN,Stockholm,67,96
+1912,USA,Stockholm,101,633
+1912,BEL,Stockholm,19,89
+1912,RU1,Stockholm,14,17
+1912,HUN,Stockholm,30,63
+1912,ANZ,Stockholm,10,29
+1912,GER,Stockholm,52,160
+1912,GBR,Stockholm,160,594
+1912,GRE,Stockholm,2,59
+1912,RSA,Stockholm,7,9
+1912,FRA,Stockholm,25,256
+1912,NOR,Stockholm,76,129
+1912,AUT,Stockholm,14,27
+1912,SWE,Stockholm,173,272
+1912,DEN,Stockholm,84,111
+1912,ITA,Stockholm,21,32
+1912,NED,Stockholm,22,53
+1920,NED,Antwerp,48,101
+1920,GRE,Antwerp,5,64
+1920,JPN,Antwerp,3,3
+1920,BEL,Antwerp,188,277
+1920,FRA,Antwerp,141,397
+1920,NOR,Antwerp,141,270
+1920,SWE,Antwerp,146,418
+1920,ESP,Antwerp,24,26
+1920,CAN,Antwerp,16,112
+1920,LUX,Antwerp,1,1
+1920,SUI,Antwerp,29,49
+1920,BRA,Antwerp,7,7
+1920,USA,Antwerp,193,826
+1920,AUS,Antwerp,6,13
+1920,NZL,Antwerp,1,1
+1920,FIN,Antwerp,49,145
+1920,DEN,Antwerp,75,186
+1920,ITA,Antwerp,84,116
+1920,TCH,Antwerp,10,10
+1920,EST,Antwerp,3,3
+1920,RSA,Antwerp,21,30
+1920,GBR,Antwerp,107,701
+1924,NED,Paris,26,127
+1924,ITA,Paris,51,167
+1924,URU,Paris,22,22
+1924,RSA,Paris,3,33
+1924,SWE,Paris,80,498
+1924,POL,Paris,5,5
+1924,YUG,Paris,2,2
+1924,ROU,Paris,23,23
+1924,FRA,Paris,122,519
+1924,JPN,Paris,1,4
+1924,ARG,Paris,11,11
+1924,SUI,Paris,65,114
+1924,GBR,Paris,66,767
+1924,HAI,Paris,7,7
+1924,CAN,Paris,20,132
+1924,NOR,Paris,26,296
+1924,EST,Paris,6,9
+1924,USA,Paris,198,1024
+1924,DEN,Paris,12,198
+1924,AUS,Paris,10,23
+1924,BEL,Paris,38,315
+1924,FIN,Paris,52,197
+1924,AUT,Paris,4,31
+1924,NZL,Paris,1,2
+1924,POR,Paris,3,3
+1924,TCH,Paris,10,20
+1924,HUN,Paris,20,83
+1928,JPN,Amsterdam,8,12
+1928,NOR,Amsterdam,9,305
+1928,CAN,Amsterdam,33,165
+1928,RSA,Amsterdam,6,39
+1928,CHI,Amsterdam,1,1
+1928,NZL,Amsterdam,1,3
+1928,TCH,Amsterdam,16,36
+1928,GER,Amsterdam,72,232
+1928,EST,Amsterdam,9,18
+1928,EGY,Amsterdam,4,4
+1928,IND,Amsterdam,15,17
+1928,ARG,Amsterdam,32,43
+1928,GBR,Amsterdam,55,822
+1928,PHI,Amsterdam,1,1
+1928,ITA,Amsterdam,70,237
+1928,SWE,Amsterdam,36,534
+1928,SUI,Amsterdam,29,143
+1928,NED,Amsterdam,65,192
+1928,YUG,Amsterdam,12,14
+1928,AUT,Amsterdam,4,35
+1928,AUS,Amsterdam,4,27
+1928,HAI,Amsterdam,1,8
+1928,HUN,Amsterdam,20,103
+1928,URU,Amsterdam,22,44
+1928,FIN,Amsterdam,25,222
+1928,ESP,Amsterdam,3,29
+1928,IRL,Amsterdam,1,1
+1928,BEL,Amsterdam,5,320
+1928,FRA,Amsterdam,36,555
+1928,DEN,Amsterdam,13,211
+1928,POL,Amsterdam,18,23
+1928,USA,Amsterdam,84,1108
+1932,LAT,Los Angeles,1,1
+1932,ESP,Los Angeles,1,30
+1932,FRA,Los Angeles,37,592
+1932,DEN,Los Angeles,9,220
+1932,GBR,Los Angeles,34,856
+1932,FIN,Los Angeles,29,251
+1932,NZL,Los Angeles,2,5
+1932,CAN,Los Angeles,38,203
+1932,SUI,Los Angeles,1,144
+1932,SWE,Los Angeles,31,565
+1932,TCH,Los Angeles,4,40
+1932,ARG,Los Angeles,4,47
+1932,RSA,Los Angeles,5,44
+1932,JPN,Los Angeles,31,43
+1932,IND,Los Angeles,11,28
+1932,URU,Los Angeles,1,45
+1932,IRL,Los Angeles,2,3
+1932,USA,Los Angeles,181,1289
+1932,GER,Los Angeles,38,270
+1932,AUT,Los Angeles,5,40
+1932,NED,Los Angeles,12,204
+1932,AUS,Los Angeles,5,32
+1932,POL,Los Angeles,19,42
+1932,ITA,Los Angeles,77,314
+1932,HUN,Los Angeles,32,135
+1932,MEX,Los Angeles,2,2
+1932,PHI,Los Angeles,3,4
+1936,NZL,Berlin,1,6
+1936,BEL,Berlin,12,332
+1936,HUN,Berlin,42,177
+1936,SUI,Berlin,47,191
+1936,FIN,Berlin,26,277
+1936,LAT,Berlin,2,3
+1936,EST,Berlin,7,25
+1936,IND,Berlin,19,47
+1936,TCH,Berlin,17,57
+1936,NOR,Berlin,28,333
+1936,AUT,Berlin,50,90
+1936,DEN,Berlin,6,226
+1936,AUS,Berlin,1,33
+1936,POL,Berlin,9,51
+1936,ITA,Berlin,71,385
+1936,PHI,Berlin,1,5
+1936,EGY,Berlin,5,9
+1936,SWE,Berlin,34,599
+1936,POR,Berlin,3,6
+1936,MEX,Berlin,16,18
+1936,USA,Berlin,92,1381
+1936,NED,Berlin,37,241
+1936,GER,Berlin,210,480
+1936,CAN,Berlin,22,225
+1936,JPN,Berlin,21,64
+1936,ROU,Berlin,2,25
+1936,YUG,Berlin,1,15
+1936,RSA,Berlin,1,45
+1936,TUR,Berlin,2,2
+1936,GBR,Berlin,36,892
+1936,FRA,Berlin,43,635
+1936,ARG,Berlin,11,58
+1948,TRI,London,1,1
+1948,AUS,London,16,49
+1948,TCH,London,20,77
+1948,SRI,London,1,1
+1948,IND,London,20,67
+1948,IRI,London,1,1
+1948,POR,London,5,11
+1948,SWE,London,73,672
+1948,ESP,London,3,33
+1948,POL,London,1,52
+1948,ARG,London,12,70
+1948,NED,London,42,283
+1948,ITA,London,63,448
+1948,AUT,London,4,94
+1948,NOR,London,18,351
+1948,GBR,London,56,948
+1948,JAM,London,3,3
+1948,PAN,London,2,2
+1948,URU,London,3,48
+1948,MEX,London,9,27
+1948,CAN,London,6,231
+1948,FIN,London,29,306
+1948,YUG,London,16,31
+1948,BRA,London,12,19
+1948,HUN,London,60,237
+1948,EGY,London,5,14
+1948,BEL,London,14,346
+1948,PER,London,1,1
+1948,KOR,London,2,2
+1948,RSA,London,4,49
+1948,USA,London,148,1529
+1948,PUR,London,1,1
+1948,SUI,London,32,223
+1948,TUR,London,12,14
+1948,CUB,London,2,13
+1948,DEN,London,49,275
+1948,FRA,London,68,703
+1952,ESP,Helsinki,1,34
+1952,RSA,Helsinki,14,63
+1952,GBR,Helsinki,31,979
+1952,EGY,Helsinki,1,15
+1952,GER,Helsinki,40,520
+1952,ITA,Helsinki,53,501
+1952,NZL,Helsinki,3,9
+1952,FIN,Helsinki,40,346
+1952,HUN,Helsinki,101,338
+1952,JAM,Helsinki,8,11
+1952,ROU,Helsinki,4,29
+1952,JPN,Helsinki,12,76
+1952,KOR,Helsinki,2,4
+1952,SUI,Helsinki,33,256
+1952,POR,Helsinki,2,13
+1952,IND,Helsinki,15,82
+1952,ARG,Helsinki,6,76
+1952,IRI,Helsinki,7,8
+1952,POL,Helsinki,4,56
+1952,IRL,Helsinki,1,4
+1952,FRA,Helsinki,39,742
+1952,SWE,Helsinki,70,742
+1952,AUS,Helsinki,20,69
+1952,LUX,Helsinki,1,2
+1952,BRA,Helsinki,3,22
+1952,TUR,Helsinki,3,17
+1952,BEL,Helsinki,7,353
+1952,USA,Helsinki,130,1659
+1952,TCH,Helsinki,25,102
+1952,NOR,Helsinki,13,364
+1952,BUL,Helsinki,1,1
+1952,DEN,Helsinki,9,284
+1952,URS,Helsinki,117,117
+1952,NED,Helsinki,18,301
+1952,YUG,Helsinki,24,55
+1952,MEX,Helsinki,1,28
+1952,VEN,Helsinki,1,1
+1952,LIB,Helsinki,2,2
+1952,URU,Helsinki,14,62
+1952,CAN,Helsinki,4,235
+1952,TRI,Helsinki,2,3
+1952,CHI,Helsinki,4,5
+1952,AUT,Helsinki,3,97
+1956,FRA,Melbourne / Stockholm,32,774
+1956,BRA,Melbourne / Stockholm,1,23
+1956,CHI,Melbourne / Stockholm,4,9
+1956,GRE,Melbourne / Stockholm,1,65
+1956,SUI,Melbourne / Stockholm,3,259
+1956,PAK,Melbourne / Stockholm,14,14
+1956,EUA,Melbourne / Stockholm,57,57
+1956,FIN,Melbourne / Stockholm,26,372
+1956,TUR,Melbourne / Stockholm,7,24
+1956,ARG,Melbourne / Stockholm,2,78
+1956,BUL,Melbourne / Stockholm,18,19
+1956,GBR,Melbourne / Stockholm,45,1024
+1956,NZL,Melbourne / Stockholm,3,12
+1956,RSA,Melbourne / Stockholm,7,70
+1956,CAN,Melbourne / Stockholm,19,254
+1956,YUG,Melbourne / Stockholm,23,78
+1956,JPN,Melbourne / Stockholm,24,100
+1956,SWE,Melbourne / Stockholm,34,776
+1956,URS,Melbourne / Stockholm,169,286
+1956,KOR,Melbourne / Stockholm,2,6
+1956,ROU,Melbourne / Stockholm,19,48
+1956,POL,Melbourne / Stockholm,19,75
+1956,IRI,Melbourne / Stockholm,5,13
+1956,URU,Melbourne / Stockholm,12,74
+1956,IND,Melbourne / Stockholm,17,99
+1956,MEX,Melbourne / Stockholm,2,30
+1956,IRL,Melbourne / Stockholm,5,9
+1956,AUT,Melbourne / Stockholm,4,101
+1956,ITA,Melbourne / Stockholm,46,547
+1956,USA,Melbourne / Stockholm,118,1777
+1956,BAH,Melbourne / Stockholm,2,2
+1956,DEN,Melbourne / Stockholm,7,291
+1956,BEL,Melbourne / Stockholm,2,355
+1956,TCH,Melbourne / Stockholm,7,109
+1956,AUS,Melbourne / Stockholm,61,130
+1956,ISL,Melbourne / Stockholm,1,1
+1956,HUN,Melbourne / Stockholm,64,402
+1956,NOR,Melbourne / Stockholm,3,367
+1960,IRQ,Rome,1,1
+1960,JPN,Rome,29,129
+1960,FRA,Rome,11,785
+1960,ARG,Rome,4,82
+1960,AUT,Rome,3,104
+1960,TUR,Rome,9,33
+1960,AUS,Rome,36,166
+1960,VEN,Rome,1,2
+1960,SIN,Rome,1,1
+1960,GBR,Rome,28,1052
+1960,RSA,Rome,3,73
+1960,BEL,Rome,4,359
+1960,CAN,Rome,9,263
+1960,BRA,Rome,13,36
+1960,ROU,Rome,15,63
+1960,PAK,Rome,14,28
+1960,GRE,Rome,3,68
+1960,HUN,Rome,65,467
+1960,GHA,Rome,1,1
+1960,URS,Rome,169,455
+1960,BUL,Rome,7,26
+1960,POR,Rome,2,15
+1960,USA,Rome,112,1889
+1960,NED,Rome,3,304
+1960,BWI,Rome,5,5
+1960,MEX,Rome,1,31
+1960,ITA,Rome,88,635
+1960,IRI,Rome,4,17
+1960,POL,Rome,30,105
+1960,IND,Rome,13,112
+1960,SWE,Rome,7,783
+1960,ETH,Rome,1,1
+1960,NZL,Rome,3,15
+1960,EUA,Rome,88,145
+1960,ESP,Rome,14,48
+1960,SUI,Rome,11,270
+1960,EGY,Rome,2,17
+1960,TCH,Rome,22,131
+1960,YUG,Rome,17,95
+1960,TPE,Rome,1,1
+1960,DEN,Rome,23,314
+1960,NOR,Rome,2,369
+1960,FIN,Rome,6,378
+1960,MAR,Rome,1,1
+1964,NED,Tokyo,30,334
+1964,YUG,Tokyo,15,110
+1964,BUL,Tokyo,10,36
+1964,TCH,Tokyo,55,186
+1964,EUA,Tokyo,115,260
+1964,IRI,Tokyo,2,19
+1964,FIN,Tokyo,5,383
+1964,ITA,Tokyo,50,685
+1964,IND,Tokyo,15,127
+1964,GHA,Tokyo,1,2
+1964,DEN,Tokyo,12,326
+1964,MEX,Tokyo,1,32
+1964,SUI,Tokyo,6,276
+1964,BRA,Tokyo,12,48
+1964,PAK,Tokyo,16,44
+1964,ROU,Tokyo,16,79
+1964,KEN,Tokyo,1,1
+1964,ETH,Tokyo,1,2
+1964,USA,Tokyo,150,2039
+1964,BAH,Tokyo,2,4
+1964,URU,Tokyo,1,75
+1964,HUN,Tokyo,56,523
+1964,BEL,Tokyo,3,362
+1964,URS,Tokyo,174,629
+1964,JPN,Tokyo,64,193
+1964,CUB,Tokyo,1,14
+1964,KOR,Tokyo,3,9
+1964,NGR,Tokyo,1,1
+1964,TUR,Tokyo,6,39
+1964,PHI,Tokyo,1,6
+1964,ARG,Tokyo,1,83
+1964,TRI,Tokyo,6,9
+1964,AUS,Tokyo,42,208
+1964,IRL,Tokyo,1,10
+1964,POL,Tokyo,48,153
+1964,NZL,Tokyo,6,21
+1964,CAN,Tokyo,5,268
+1964,SWE,Tokyo,15,798
+1964,FRA,Tokyo,31,816
+1964,GBR,Tokyo,28,1080
+1964,TUN,Tokyo,2,2
+1968,FRA,Mexico,27,843
+1968,FRG,Mexico,49,49
+1968,ARG,Mexico,2,85
+1968,BRA,Mexico,4,52
+1968,CUB,Mexico,10,24
+1968,TUN,Mexico,2,4
+1968,BEL,Mexico,3,365
+1968,GRE,Mexico,1,69
+1968,SUI,Mexico,13,289
+1968,ROU,Mexico,23,102
+1968,AUS,Mexico,49,257
+1968,HUN,Mexico,81,604
+1968,KEN,Mexico,12,13
+1968,USA,Mexico,149,2188
+1968,ETH,Mexico,2,4
+1968,NZL,Mexico,7,28
+1968,JAM,Mexico,1,12
+1968,PAK,Mexico,13,57
+1968,KOR,Mexico,2,11
+1968,YUG,Mexico,29,139
+1968,POL,Mexico,37,190
+1968,DEN,Mexico,16,342
+1968,MGL,Mexico,4,4
+1968,NOR,Mexico,6,375
+1968,JPN,Mexico,67,260
+1968,GBR,Mexico,18,1098
+1968,TPE,Mexico,1,2
+1968,IRI,Mexico,5,24
+1968,FIN,Mexico,4,387
+1968,GDR,Mexico,51,51
+1968,CAN,Mexico,10,278
+1968,AUT,Mexico,5,109
+1968,SWE,Mexico,9,807
+1968,NED,Mexico,14,348
+1968,UGA,Mexico,2,2
+1968,ITA,Mexico,32,717
+1968,MEX,Mexico,9,41
+1968,TUR,Mexico,2,41
+1968,IND,Mexico,15,142
+1968,BUL,Mexico,26,62
+1968,URS,Mexico,188,817
+1968,VEN,Mexico,1,3
+1968,TCH,Mexico,29,215
+1968,CMR,Mexico,1,1
+1972,MGL,Munich,1,5
+1972,IRI,Munich,3,27
+1972,ESP,Munich,1,49
+1972,HUN,Munich,81,685
+1972,NOR,Munich,8,383
+1972,CUB,Munich,22,46
+1972,DEN,Munich,1,343
+1972,AUT,Munich,3,112
+1972,PRK,Munich,15,15
+1972,YUG,Munich,18,157
+1972,KOR,Munich,1,12
+1972,MEX,Munich,1,42
+1972,SWE,Munich,21,828
+1972,USA,Munich,155,2343
+1972,AUS,Munich,20,277
+1972,IND,Munich,14,156
+1972,ITA,Munich,25,742
+1972,POL,Munich,46,236
+1972,TUN,Munich,1,5
+1972,BEL,Munich,2,367
+1972,GHA,Munich,1,3
+1972,BUL,Munich,22,84
+1972,TCH,Munich,29,244
+1972,UGA,Munich,2,4
+1972,KEN,Munich,12,25
+1972,LIB,Munich,1,3
+1972,COL,Munich,3,3
+1972,GDR,Munich,148,199
+1972,FIN,Munich,10,397
+1972,JPN,Munich,56,316
+1972,GBR,Munich,29,1127
+1972,NGR,Munich,1,2
+1972,CAN,Munich,10,288
+1972,NED,Munich,6,354
+1972,TUR,Munich,1,42
+1972,ARG,Munich,1,86
+1972,FRG,Munich,96,145
+1972,NZL,Munich,14,42
+1972,FRA,Munich,22,865
+1972,ROU,Munich,40,142
+1972,URS,Munich,211,1028
+1972,NIG,Munich,1,1
+1972,BRA,Munich,2,54
+1972,GRE,Munich,2,71
+1972,JAM,Munich,1,13
+1972,ETH,Munich,2,6
+1972,PAK,Munich,15,72
+1972,SUI,Munich,8,297
+1976,AUT,Montreal,1,113
+1976,PUR,Montreal,1,2
+1976,KOR,Montreal,17,29
+1976,CAN,Montreal,20,308
+1976,CUB,Montreal,24,70
+1976,NED,Montreal,15,369
+1976,SWE,Montreal,10,838
+1976,SUI,Montreal,10,307
+1976,JAM,Montreal,2,15
+1976,BRA,Montreal,3,57
+1976,MEX,Montreal,2,44
+1976,MGL,Montreal,1,6
+1976,FRG,Montreal,75,220
+1976,HUN,Montreal,55,740
+1976,AUS,Montreal,24,301
+1976,NZL,Montreal,27,69
+1976,TRI,Montreal,1,10
+1976,FRA,Montreal,20,885
+1976,BEL,Montreal,9,376
+1976,VEN,Montreal,1,4
+1976,JPN,Montreal,41,357
+1976,NOR,Montreal,6,389
+1976,PRK,Montreal,2,17
+1976,URS,Montreal,285,1313
+1976,USA,Montreal,155,2498
+1976,ITA,Montreal,31,773
+1976,ROU,Montreal,55,197
+1976,BUL,Montreal,39,123
+1976,TCH,Montreal,15,259
+1976,ESP,Montreal,6,55
+1976,DEN,Montreal,8,351
+1976,POL,Montreal,73,309
+1976,THA,Montreal,1,1
+1976,YUG,Montreal,19,176
+1976,BER,Montreal,1,1
+1976,FIN,Montreal,6,403
+1976,IRI,Montreal,2,29
+1976,PAK,Montreal,16,88
+1976,GBR,Montreal,32,1159
+1976,POR,Montreal,2,17
+1976,GDR,Montreal,192,391
+1980,MEX,Moscow,12,56
+1980,LIB,Moscow,1,4
+1980,ITA,Moscow,37,810
+1980,ZIM,Moscow,16,16
+1980,NED,Moscow,6,375
+1980,JAM,Moscow,3,18
+1980,MGL,Moscow,4,10
+1980,GBR,Moscow,45,1204
+1980,HUN,Moscow,61,801
+1980,YUG,Moscow,57,233
+1980,DEN,Moscow,8,359
+1980,GUY,Moscow,1,1
+1980,BRA,Moscow,9,66
+1980,GRE,Moscow,5,76
+1980,URS,Moscow,442,1755
+1980,GDR,Moscow,260,651
+1980,BUL,Moscow,94,217
+1980,UGA,Moscow,1,5
+1980,SWE,Moscow,18,856
+1980,FRA,Moscow,29,914
+1980,FIN,Moscow,9,412
+1980,ETH,Moscow,4,10
+1980,SUI,Moscow,2,309
+1980,BEL,Moscow,1,377
+1980,PRK,Moscow,5,22
+1980,ROU,Moscow,72,269
+1980,ESP,Moscow,24,79
+1980,IND,Moscow,16,172
+1980,POL,Moscow,50,359
+1980,TCH,Moscow,52,311
+1980,IRL,Moscow,3,13
+1980,CUB,Moscow,20,90
+1980,TAN,Moscow,2,2
+1980,AUT,Moscow,5,118
+1980,VEN,Moscow,1,5
+1980,AUS,Moscow,12,313
+1984,TUR,Los Angeles,3,45
+1984,NZL,Los Angeles,23,92
+1984,KOR,Los Angeles,42,71
+1984,FRA,Los Angeles,68,982
+1984,ISL,Los Angeles,1,2
+1984,TPE,Los Angeles,1,3
+1984,FIN,Los Angeles,12,424
+1984,SUI,Los Angeles,15,324
+1984,CAN,Los Angeles,86,394
+1984,KEN,Los Angeles,3,28
+1984,MAR,Los Angeles,2,3
+1984,CHN,Los Angeles,76,76
+1984,DOM,Los Angeles,1,1
+1984,CIV,Los Angeles,1,1
+1984,NED,Los Angeles,40,415
+1984,EGY,Los Angeles,1,18
+1984,CMR,Los Angeles,1,2
+1984,NGR,Los Angeles,5,7
+1984,NOR,Los Angeles,4,393
+1984,ZAM,Los Angeles,1,1
+1984,AUS,Los Angeles,50,363
+1984,FRG,Los Angeles,157,377
+1984,AUT,Los Angeles,3,121
+1984,JPN,Los Angeles,49,406
+1984,ALG,Los Angeles,2,2
+1984,USA,Los Angeles,333,2831
+1984,ITA,Los Angeles,63,873
+1984,YUG,Los Angeles,87,320
+1984,POR,Los Angeles,3,20
+1984,PUR,Los Angeles,2,4
+1984,JAM,Los Angeles,6,24
+1984,BEL,Los Angeles,5,382
+1984,PAK,Los Angeles,16,104
+1984,MEX,Los Angeles,6,62
+1984,COL,Los Angeles,1,4
+1984,DEN,Los Angeles,15,374
+1984,GRE,Los Angeles,2,78
+1984,VEN,Los Angeles,3,8
+1984,ESP,Los Angeles,19,98
+1984,ROU,Los Angeles,106,375
+1984,BRA,Los Angeles,37,103
+1984,SWE,Los Angeles,32,888
+1984,GBR,Los Angeles,72,1276
+1984,THA,Los Angeles,1,2
+1984,PER,Los Angeles,1,2
+1984,SYR,Los Angeles,1,1
+1984,IRL,Los Angeles,1,14
+1988,COL,Seoul,1,5
+1988,THA,Seoul,1,3
+1988,ISV,Seoul,1,1
+1988,CHN,Seoul,53,129
+1988,MGL,Seoul,1,11
+1988,AHO,Seoul,1,1
+1988,AUS,Seoul,34,397
+1988,MEX,Seoul,2,64
+1988,AUT,Seoul,1,122
+1988,USA,Seoul,193,3024
+1988,NED,Seoul,44,459
+1988,BEL,Seoul,2,384
+1988,BRA,Seoul,28,131
+1988,BUL,Seoul,41,258
+1988,TUR,Seoul,2,47
+1988,CAN,Seoul,21,415
+1988,CHI,Seoul,1,10
+1988,MAR,Seoul,3,6
+1988,URS,Seoul,294,2049
+1988,CRC,Seoul,1,1
+1988,ESP,Seoul,5,103
+1988,TCH,Seoul,10,321
+1988,JPN,Seoul,20,426
+1988,FRG,Seoul,113,490
+1988,GBR,Seoul,53,1329
+1988,GDR,Seoul,174,825
+1988,ROU,Seoul,51,426
+1988,GRE,Seoul,1,79
+1988,JAM,Seoul,5,29
+1988,HUN,Seoul,44,845
+1988,PAK,Seoul,1,105
+1988,POR,Seoul,1,21
+1988,INA,Seoul,3,3
+1988,ITA,Seoul,29,902
+1988,YUG,Seoul,63,383
+1988,POL,Seoul,21,380
+1988,IRI,Seoul,1,30
+1988,PHI,Seoul,1,7
+1988,PER,Seoul,12,14
+1988,NZL,Seoul,24,116
+1988,SEN,Seoul,1,1
+1988,FRA,Seoul,29,1011
+1988,FIN,Seoul,4,428
+1988,KOR,Seoul,77,148
+1988,DEN,Seoul,7,381
+1988,ARG,Seoul,13,99
+1988,DJI,Seoul,1,1
+1988,SUR,Seoul,1,1
+1988,NOR,Seoul,23,416
+1988,SWE,Seoul,16,904
+1988,SUI,Seoul,8,332
+1988,KEN,Seoul,9,37
+1992,PHI,Barcelona,1,8
+1992,PER,Barcelona,1,15
+1992,THA,Barcelona,1,4
+1992,NGR,Barcelona,11,18
+1992,POL,Barcelona,42,422
+1992,SWE,Barcelona,35,939
+1992,MGL,Barcelona,2,13
+1992,NAM,Barcelona,2,2
+1992,TPE,Barcelona,20,23
+1992,USA,Barcelona,224,3248
+1992,SLO,Barcelona,6,6
+1992,PRK,Barcelona,10,32
+1992,NOR,Barcelona,23,439
+1992,NED,Barcelona,33,492
+1992,PUR,Barcelona,1,5
+1992,QAT,Barcelona,1,1
+1992,SUR,Barcelona,1,2
+1992,ROU,Barcelona,53,479
+1992,TCH,Barcelona,8,329
+1992,SUI,Barcelona,1,333
+1992,TUR,Barcelona,6,53
+1992,NZL,Barcelona,15,131
+1992,PAK,Barcelona,16,121
+1992,RSA,Barcelona,3,76
+1992,ITA,Barcelona,46,948
+1992,LTU,Barcelona,13,13
+1992,BUL,Barcelona,17,275
+1992,BAH,Barcelona,1,5
+1992,IOP,Barcelona,3,3
+1992,IRI,Barcelona,3,33
+1992,GBR,Barcelona,50,1379
+1992,HUN,Barcelona,45,890
+1992,DEN,Barcelona,14,395
+1992,IRL,Barcelona,2,16
+1992,ISR,Barcelona,2,2
+1992,LAT,Barcelona,3,6
+1992,ESP,Barcelona,66,169
+1992,AUS,Barcelona,57,454
+1992,KOR,Barcelona,49,197
+1992,JAM,Barcelona,4,33
+1992,CHN,Barcelona,83,212
+1992,CAN,Barcelona,44,459
+1992,JPN,Barcelona,47,473
+1992,EST,Barcelona,3,28
+1992,ETH,Barcelona,3,13
+1992,KEN,Barcelona,8,45
+1992,AUT,Barcelona,6,128
+1992,FRA,Barcelona,57,1068
+1992,EUN,Barcelona,223,223
+1992,ARG,Barcelona,2,101
+1992,MAR,Barcelona,3,9
+1992,FIN,Barcelona,7,435
+1992,ALG,Barcelona,2,4
+1992,COL,Barcelona,1,6
+1992,GER,Barcelona,198,718
+1992,GRE,Barcelona,2,81
+1992,CRO,Barcelona,15,15
+1992,MAS,Barcelona,2,2
+1992,MEX,Barcelona,1,65
+1992,GHA,Barcelona,13,16
+1992,BRA,Barcelona,14,145
+1992,CUB,Barcelona,71,161
+1992,INA,Barcelona,6,9
+1992,BEL,Barcelona,3,387
+1996,GRE,Atlanta,8,89
+1996,BDI,Atlanta,1,1
+1996,JAM,Atlanta,16,49
+1996,TUR,Atlanta,6,59
+1996,BAH,Atlanta,5,10
+1996,BEL,Atlanta,6,393
+1996,SLO,Atlanta,2,8
+1996,UZB,Atlanta,2,2
+1996,FRA,Atlanta,51,1119
+1996,NZL,Atlanta,9,140
+1996,HUN,Atlanta,43,933
+1996,JPN,Atlanta,43,516
+1996,PRK,Atlanta,5,37
+1996,BLR,Atlanta,23,23
+1996,PUR,Atlanta,1,6
+1996,CAN,Atlanta,51,510
+1996,USA,Atlanta,260,3508
+1996,BUL,Atlanta,21,296
+1996,ITA,Atlanta,71,1019
+1996,POL,Atlanta,21,443
+1996,ROU,Atlanta,38,517
+1996,IND,Atlanta,1,173
+1996,GEO,Atlanta,2,2
+1996,GER,Atlanta,124,842
+1996,IRI,Atlanta,3,36
+1996,GBR,Atlanta,26,1405
+1996,BRA,Atlanta,64,209
+1996,AUT,Atlanta,3,131
+1996,INA,Atlanta,6,15
+1996,RSA,Atlanta,5,81
+1996,AZE,Atlanta,1,1
+1996,PHI,Atlanta,1,9
+1996,UKR,Atlanta,34,34
+1996,UGA,Atlanta,1,6
+1996,ISR,Atlanta,1,3
+1996,POR,Atlanta,3,24
+1996,RUS,Atlanta,115,115
+1996,IRL,Atlanta,4,20
+1996,KAZ,Atlanta,11,11
+1996,HKG,Atlanta,1,1
+1996,ESP,Atlanta,67,236
+1996,MAR,Atlanta,2,11
+1996,ALG,Atlanta,3,7
+1996,LAT,Atlanta,1,7
+1996,TRI,Atlanta,2,12
+1996,ECU,Atlanta,1,1
+1996,MDA,Atlanta,3,3
+1996,ARM,Atlanta,2,2
+1996,YUG,Atlanta,26,409
+1996,DEN,Atlanta,24,419
+1996,NGR,Atlanta,26,44
+1996,LTU,Atlanta,12,25
+1996,FIN,Atlanta,4,439
+1996,TPE,Atlanta,1,24
+1996,SWE,Atlanta,31,970
+1996,MAS,Atlanta,3,5
+1996,SYR,Atlanta,1,2
+1996,NED,Atlanta,73,565
+1996,CUB,Atlanta,57,218
+1996,ARG,Atlanta,20,121
+1996,MEX,Atlanta,1,66
+1996,CRO,Atlanta,29,44
+1996,CZE,Atlanta,13,13
+1996,ZAM,Atlanta,1,2
+1996,MGL,Atlanta,1,14
+1996,THA,Atlanta,2,6
+1996,KEN,Atlanta,8,53
+1996,ETH,Atlanta,3,16
+1996,AUS,Atlanta,132,586
+1996,NAM,Atlanta,2,4
+1996,SUI,Atlanta,11,344
+1996,NOR,Atlanta,25,464
+1996,TUN,Atlanta,1,6
+1996,CRC,Atlanta,1,2
+1996,CHN,Atlanta,110,322
+1996,KOR,Atlanta,66,263
+1996,MOZ,Atlanta,1,1
+1996,SVK,Atlanta,3,3
+1996,TGA,Atlanta,1,1
+2000,CRO,Sydney,10,54
+2000,BRA,Sydney,48,257
+2000,GER,Sydney,119,961
+2000,THA,Sydney,3,9
+2000,GRE,Sydney,18,107
+2000,BLR,Sydney,22,45
+2000,QAT,Sydney,1,2
+2000,CUB,Sydney,69,287
+2000,CRC,Sydney,2,4
+2000,FIN,Sydney,5,444
+2000,GBR,Sydney,55,1460
+2000,CZE,Sydney,9,22
+2000,CHI,Sydney,18,28
+2000,ETH,Sydney,8,24
+2000,CAN,Sydney,31,541
+2000,SRI,Sydney,1,2
+2000,EST,Sydney,3,31
+2000,SLO,Sydney,3,11
+2000,SUI,Sydney,14,358
+2000,CHN,Sydney,79,401
+2000,FRA,Sydney,66,1185
+2000,TUR,Sydney,5,64
+2000,ROU,Sydney,46,563
+2000,RUS,Sydney,188,303
+2000,ESP,Sydney,43,279
+2000,BUL,Sydney,13,309
+2000,TRI,Sydney,2,14
+2000,RSA,Sydney,5,86
+2000,CMR,Sydney,18,20
+2000,DEN,Sydney,25,444
+2000,TPE,Sydney,5,29
+2000,UKR,Sydney,35,69
+2000,SWE,Sydney,32,1002
+2000,GEO,Sydney,6,8
+2000,SVK,Sydney,6,9
+2000,BEL,Sydney,7,400
+2000,COL,Sydney,1,7
+2000,URU,Sydney,1,76
+2000,LTU,Sydney,17,42
+2000,NGR,Sydney,8,52
+2000,AZE,Sydney,3,4
+2000,IRL,Sydney,1,21
+2000,ISL,Sydney,1,3
+2000,ISR,Sydney,1,4
+2000,AUT,Sydney,4,135
+2000,ITA,Sydney,65,1084
+2000,ARM,Sydney,1,3
+2000,LAT,Sydney,3,10
+2000,KUW,Sydney,1,1
+2000,KSA,Sydney,2,2
+2000,USA,Sydney,248,3756
+2000,JAM,Sydney,23,72
+2000,VIE,Sydney,1,1
+2000,KOR,Sydney,73,336
+2000,UZB,Sydney,4,6
+2000,KGZ,Sydney,1,1
+2000,NZL,Sydney,4,144
+2000,JPN,Sydney,43,559
+2000,NOR,Sydney,44,508
+2000,AUS,Sydney,183,769
+2000,KAZ,Sydney,7,18
+2000,IRI,Sydney,4,40
+2000,ARG,Sydney,20,141
+2000,KEN,Sydney,7,60
+2000,MAR,Sydney,5,16
+2000,MEX,Sydney,6,72
+2000,PRK,Sydney,4,41
+2000,MOZ,Sydney,1,2
+2000,MDA,Sydney,2,5
+2000,BAH,Sydney,6,16
+2000,HUN,Sydney,53,986
+2000,MKD,Sydney,1,1
+2000,ALG,Sydney,5,12
+2000,YUG,Sydney,26,435
+2000,INA,Sydney,8,23
+2000,NED,Sydney,79,644
+2000,POL,Sydney,24,467
+2000,IND,Sydney,1,174
+2000,BAR,Sydney,1,1
+2000,POR,Sydney,2,26
+2004,KOR,Athens,52,388
+2004,ESP,Athens,27,306
+2004,CMR,Athens,1,21
+2004,SUI,Athens,7,365
+2004,VEN,Athens,2,10
+2004,NOR,Athens,7,515
+2004,ZIM,Athens,3,19
+2004,AUS,Athens,157,926
+2004,MGL,Athens,1,15
+2004,EST,Athens,3,34
+2004,MEX,Athens,4,76
+2004,SVK,Athens,10,19
+2004,ERI,Athens,1,1
+2004,THA,Athens,8,17
+2004,SWE,Athens,12,1014
+2004,NED,Athens,76,720
+2004,ARG,Athens,47,188
+2004,SYR,Athens,1,3
+2004,LTU,Athens,3,45
+2004,KEN,Athens,7,67
+2004,DEN,Athens,29,473
+2004,CRO,Athens,20,74
+2004,TPE,Athens,9,38
+2004,DOM,Athens,1,2
+2004,CUB,Athens,61,348
+2004,LAT,Athens,4,14
+2004,CHN,Athens,94,495
+2004,EGY,Athens,5,23
+2004,CZE,Athens,12,34
+2004,TRI,Athens,1,15
+2004,MAR,Athens,3,19
+2004,NGR,Athens,8,60
+2004,KAZ,Athens,8,26
+2004,ETH,Athens,7,31
+2004,BUL,Athens,17,326
+2004,RUS,Athens,192,495
+2004,ISR,Athens,2,6
+2004,AUT,Athens,8,143
+2004,AZE,Athens,5,9
+2004,IRI,Athens,6,46
+2004,GBR,Athens,57,1517
+2004,UKR,Athens,48,117
+2004,IND,Athens,1,175
+2004,GEO,Athens,4,12
+2004,BRA,Athens,40,297
+2004,ROU,Athens,39,602
+2004,POL,Athens,12,479
+2004,BAH,Athens,2,18
+2004,GER,Athens,149,1110
+2004,INA,Athens,5,28
+2004,POR,Athens,3,29
+2004,HUN,Athens,40,1026
+2004,GRE,Athens,31,138
+2004,BLR,Athens,17,62
+2004,PRK,Athens,5,46
+2004,COL,Athens,2,9
+2004,BEL,Athens,3,403
+2004,UAE,Athens,1,1
+2004,SCG,Athens,14,14
+2004,RSA,Athens,10,96
+2004,SLO,Athens,5,16
+2004,JPN,Athens,94,653
+2004,JAM,Athens,13,85
+2004,CAN,Athens,17,558
+2004,HKG,Athens,2,3
+2004,ITA,Athens,102,1186
+2004,UZB,Athens,5,11
+2004,FIN,Athens,2,446
+2004,NZL,Athens,6,150
+2004,PAR,Athens,17,17
+2004,FRA,Athens,53,1238
+2004,CHI,Athens,4,32
+2004,TUR,Athens,10,74
+2004,USA,Athens,264,4020
+2008,ALG,Beijing,2,14
+2008,THA,Beijing,4,21
+2008,CAN,Beijing,34,592
+2008,ARM,Beijing,6,9
+2008,BLR,Beijing,30,92
+2008,TUN,Beijing,1,7
+2008,CHI,Beijing,1,33
+2008,BEL,Beijing,5,408
+2008,ZIM,Beijing,4,23
+2008,UZB,Beijing,6,17
+2008,BAH,Beijing,5,23
+2008,VEN,Beijing,1,11
+2008,TOG,Beijing,1,1
+2008,CHN,Beijing,184,679
+2008,TPE,Beijing,4,42
+2008,VIE,Beijing,1,2
+2008,AUS,Beijing,149,1075
+2008,AUT,Beijing,3,146
+2008,ARG,Beijing,51,239
+2008,TJK,Beijing,2,2
+2008,TRI,Beijing,5,20
+2008,BUL,Beijing,5,331
+2008,CMR,Beijing,1,22
+2008,UKR,Beijing,31,148
+2008,BRA,Beijing,75,372
+2008,USA,Beijing,315,4335
+2008,TUR,Beijing,8,82
+2008,AZE,Beijing,7,16
+2008,MEX,Beijing,4,80
+2008,FIN,Beijing,5,451
+2008,AFG,Beijing,1,1
+2008,SRB,Beijing,15,15
+2008,KGZ,Beijing,2,3
+2008,IND,Beijing,3,178
+2008,SIN,Beijing,3,4
+2008,FRA,Beijing,76,1314
+2008,NOR,Beijing,22,537
+2008,RUS,Beijing,143,638
+2008,KEN,Beijing,14,81
+2008,KAZ,Beijing,13,39
+2008,RSA,Beijing,1,97
+2008,GBR,Beijing,77,1594
+2008,GEO,Beijing,6,18
+2008,JPN,Beijing,51,704
+2008,NZL,Beijing,14,164
+2008,ROU,Beijing,22,624
+2008,GER,Beijing,101,1211
+2008,GRE,Beijing,7,145
+2008,JAM,Beijing,17,102
+2008,ITA,Beijing,42,1228
+2008,PAN,Beijing,1,3
+2008,COL,Beijing,2,11
+2008,ISR,Beijing,1,7
+2008,ISL,Beijing,14,17
+2008,IRL,Beijing,3,24
+2008,PRK,Beijing,6,52
+2008,HUN,Beijing,27,1053
+2008,IRI,Beijing,2,48
+2008,POR,Beijing,2,31
+2008,INA,Beijing,7,35
+2008,KOR,Beijing,78,466
+2008,SUD,Beijing,1,1
+2008,SLO,Beijing,5,21
+2008,POL,Beijing,20,499
+2008,MAR,Beijing,2,21
+2008,CZE,Beijing,7,41
+2008,DOM,Beijing,2,4
+2008,ETH,Beijing,7,38
+2008,SWE,Beijing,7,1021
+2008,MDA,Beijing,1,6
+2008,ECU,Beijing,1,2
+2008,EGY,Beijing,1,24
+2008,LTU,Beijing,5,50
+2008,MRI,Beijing,1,1
+2008,NED,Beijing,62,782
+2008,MAS,Beijing,1,6
+2008,SVK,Beijing,10,29
+2008,EST,Beijing,3,37
+2008,CRO,Beijing,5,79
+2008,LAT,Beijing,3,17
+2008,NGR,Beijing,24,84
+2008,MGL,Beijing,4,19
+2008,DEN,Beijing,18,491
+2008,CUB,Beijing,47,395
+2008,ESP,Beijing,71,377
+2008,SUI,Beijing,11,376
+2012,AFG,London,1,2
+2012,IRI,London,13,61
+2012,MAS,London,2,8
+2012,IRL,London,6,30
+2012,MGL,London,5,24
+2012,IND,London,6,184
+2012,AZE,London,10,26
+2012,ITA,London,68,1296
+2012,MNE,London,14,14
+2012,KUW,London,1,2
+2012,MAR,London,1,22
+2012,ARM,London,2,11
+2012,KSA,London,4,6
+2012,KOR,London,63,529
+2012,VEN,London,1,12
+2012,ARG,London,20,259
+2012,LAT,London,3,20
+2012,KEN,London,12,93
+2012,JAM,London,25,127
+2012,NED,London,69,851
+2012,KAZ,London,10,49
+2012,AUS,London,114,1189
+2012,UZB,London,3,20
+2012,LTU,London,5,55
+2012,JPN,London,84,788
+2012,NZL,London,26,190
+2012,USA,London,250,4585
+2012,NOR,London,17,554
+2012,ALG,London,1,15
+2012,COL,London,8,19
+2012,INA,London,3,38
+2012,SRB,London,16,31
+2012,FIN,London,5,456
+2012,MEX,London,26,106
+2012,CAN,London,57,649
+2012,ETH,London,7,45
+2012,EST,London,2,39
+2012,TUN,London,3,10
+2012,ESP,London,65,442
+2012,SUI,London,4,380
+2012,TTO,London,10,10
+2012,SVK,London,5,34
+2012,BUL,London,2,333
+2012,EGY,London,4,28
+2012,CHN,London,128,807
+2012,TPE,London,2,44
+2012,DEN,London,16,507
+2012,CZE,London,15,56
+2012,SWE,London,23,1044
+2012,CMR,London,1,23
+2012,CYP,London,1,1
+2012,CUB,London,15,410
+2012,TJK,London,1,3
+2012,THA,London,4,25
+2012,CRO,London,35,114
+2012,DOM,London,2,6
+2012,POL,London,12,511
+2012,SLO,London,5,26
+2012,TUR,London,4,86
+2012,BAH,London,4,27
+2012,HUN,London,26,1079
+2012,POR,London,2,33
+2012,PRK,London,6,58
+2012,HKG,London,1,4
+2012,PUR,London,2,8
+2012,BEL,London,3,411
+2012,GUA,London,1,1
+2012,GRN,London,1,1
+2012,GRE,London,3,148
+2012,BLR,London,21,113
+2012,SGP,London,4,4
+2012,BOT,London,1,1
+2012,ROU,London,16,640
+2012,BRA,London,59,431
+2012,BRN,London,1,1
+2012,GEO,London,7,25
+2012,UKR,London,25,173
+2012,GBR,London,126,1720
+2012,UGA,London,1,7
+2012,RSA,London,9,106
+2012,GAB,London,1,1
+2012,FRA,London,82,1396
+2012,RUS,London,130,768
+2012,GER,London,94,1305
+2012,QAT,London,2,4

@@ -26,11 +26,9 @@
 
   <!--Code to bring db into my js bar race chart-->
   <script type="text/javascript">
-  var bar_race_db = {{the_data['julia']|tojson|safe}}//julia's information from flask
-  
+  var bar_race_db = {{the_data.julia|tojson|safe}}//julia's information from flask
+  //test
   </script>
-
-
 
   
 </head>
@@ -50,20 +48,24 @@
       <div class="col-md-2"></div>
       <div class="col-md-6">
 
-          <input type="checkbox" id="Summer" name="Summer" value="Summer" checked=True>
+        <input type="checkbox" id="Sport" name="Swimming" value="Swimming" checked>
+        <label for="Sport"> Swimming Test </label>
+          <input type="checkbox" id="Summer" name="Summer" value="Summer" checked>
           <label for="Summer"> Summer Games </label>
-          <input type="checkbox" id="Winter" name="Winter" value="Winter" checked=True>
+          <input type="checkbox" id="Winter" name="Winter" value="Winter">
           <label for="Winter"> Winter Games </label><br>
           <input type="radio" name = "Sex" value="Men"> Men's
           <input type="radio" name = "Sex" value="Women"> Women's
-          <input type="radio" name = "Sex" value="Both" checked=True> Both<br>
-          <input type="checkbox" id="Gold" name="Gold" value="Gold" checked=True>
+          <input type="radio" name = "Sex" value="Both" checked> Both<br>
+          <input type="checkbox" id="Gold" name="Gold" value="Gold" checked >
           <label for="Gold"> Gold Medals </label>
-          <input type="checkbox" id="Silver" name="Silver" value="Silver" checked=True>
+          <input type="checkbox" id="Silver" name="Silver" value="Silver" checked>
           <label for="Silver"> Silver Medals </label>
-          <input type="checkbox" id="Bronze" name="Bronze" value="Bronze" checked=True>
-          <label for="Silver"> Bronze Medals </label><br>
+          <input type="checkbox" id="Bronze" name="Bronze" value="Bronze" checked>
+          <label for="Bronze"> Bronze Medals </label><br>
+          <select id="selDataset"><option>all sports</option></select>
           Sport:
+
           <select>
             <option value="Sport">All</option>
           </select>

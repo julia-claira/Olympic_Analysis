@@ -17,7 +17,13 @@ def julia_bar_race ():
     #inspector.get_table_names()
 
     #read the olympicsData table
-    data=pd.read_sql("SELECT * FROM olympicsData",conn)
+    full_data=pd.read_sql("SELECT * FROM olympicsData",conn)
+
+    #drops data from 1906 since it is not considered part of olympics
+    reduced_data=full_data.loc[(full_data["Year"] !=1906)]
+
+    #gets rid of all team members except one so it just counts one medal for a team
+    data=reduced_data.drop_duplicates(subset=['Event','Medal','Sport','Year','NOC']).reset_index(drop = True)
 
     #groupby data
     my_data=data.groupby(["NOC","Year","Season","City","Sport","Medal","Sex"]).count()
@@ -89,7 +95,7 @@ def julia_bar_race ():
         "FRG": "Germany",    
         "GAB": "Gabon",
         "GBR": "Great Britain",
-        "GDR": "East Germany",
+        "GDR": "Germany",
         "GEO": "Georgia",
         "GER": "Germany",
         "GHA": "Ghana",
@@ -172,7 +178,7 @@ def julia_bar_race ():
         "THA": "Thailand",
         "TJK": "Tajikistan",
         "TOG": "Togo",
-        "TPE": "Republic of China",
+        "TPE": "China",
         "TTO": "Trinidad and Tobago","TUN": "Tunisia",
         "TUN": "Tunisia",
         "TUR": "Turkey",
@@ -180,7 +186,7 @@ def julia_bar_race ():
         "UAR": "Egypt",
         "UGA": "Uganda",
         "UKR": "Ukraine",
-        "URS": "Soviet Union",
+        "URS": "Russia",
         "URU": "Uruguay",
         "USA": "United States",
         "UZB": "Uzbekistan",

@@ -13,6 +13,7 @@ def index():
     #create an object of our variables to pass to index
     our_info= {
        "julia": julia_bar_race().to_json(orient='table',index=False)
+
     }
    
     return render_template("index.html", the_data=our_info)
