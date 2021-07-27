@@ -95,7 +95,7 @@ def julia_bar_race ():
         "FRG": "Germany",    
         "GAB": "Gabon",
         "GBR": "Great Britain",
-        "GDR": "Germany",
+        "GDR": "East Germany",
         "GEO": "Georgia",
         "GER": "Germany",
         "GHA": "Ghana",

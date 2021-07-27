@@ -45,58 +45,66 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-2"></div>
-      <div class="col-md-6">
+      <div class="col-md-3">
+        <p></p><br><br>
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          
+          <center> <h3 class="panel-title">Medal Winners Filter</h3></center>
+        </div>
+        <div id="sample-metadata" class="panel-body">
+            <input type="checkbox" id="Summer" name="Summer" value="Summer" checked>
+            <label for="Summer"> Summer </label>
+            <input type="checkbox" id="Winter" name="Winter" value="Winter">
+            <label for="Winter"> Winter Games</label><br>
+            <input type="radio" name = "Sex" value="Men"> Men's
+            <input type="radio" name = "Sex" value="Women"> Women's
+            <input type="radio" name = "Sex" value="Both" checked> Both<br><br>
+            <input type="checkbox" id="Gold" name="Gold" value="Gold" checked >
+            <label for="Gold"> Gold Medals </label><br>
+            <input type="checkbox" id="Silver" name="Silver" value="Silver" checked>
+            <label for="Silver"> Silver Medals </label><br>
+            <input type="checkbox" id="Bronze" name="Bronze" value="Bronze" checked>
+            <label for="Bronze"> Bronze Medals </label><br><br>
+            Sport:
+            <select id="selDataset"></select><br>
+            <hr>
+            <center>
+            Speed x
+            1 <input type="radio" name = "speed" value="1" checked> 
+            2 <input type="radio" name = "speed" value="2.2">
+            4 <input type="radio" name = "speed" value="3.1">
+            16 <input type="radio" name = "speed" value="200">
+            <br><br>
 
-        <input type="checkbox" id="Sport" name="Swimming" value="Swimming" checked>
-        <label for="Sport"> Swimming Test </label>
-          <input type="checkbox" id="Summer" name="Summer" value="Summer" checked>
-          <label for="Summer"> Summer Games </label>
-          <input type="checkbox" id="Winter" name="Winter" value="Winter">
-          <label for="Winter"> Winter Games </label><br>
-          <input type="radio" name = "Sex" value="Men"> Men's
-          <input type="radio" name = "Sex" value="Women"> Women's
-          <input type="radio" name = "Sex" value="Both" checked> Both<br>
-          <input type="checkbox" id="Gold" name="Gold" value="Gold" checked >
-          <label for="Gold"> Gold Medals </label>
-          <input type="checkbox" id="Silver" name="Silver" value="Silver" checked>
-          <label for="Silver"> Silver Medals </label>
-          <input type="checkbox" id="Bronze" name="Bronze" value="Bronze" checked>
-          <label for="Bronze"> Bronze Medals </label><br>
-          <select id="selDataset"><option>all sports</option></select>
-          Sport:
+           <button type="button" id='race'>Start Medal Race</button></center>
+            </div>
 
-          <select>
-            <option value="Sport">All</option>
-          </select>
           </div>
+        </c>
+        </div>
+
+
+      <div class="col-md-9">
+       <center><h3 id="graph_sub">Medal Count Over Time</h3></center>
+       
+       <div id="simpleShapes" width="100%" height="300px">
+        <!--<svg width="100%" height="300">-->
+        
+        <div width="100%">
+         
+        </div>
       </div>
-
-    </div>
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-2">
-        <p></p>
-        <!--<div class="panel panel-primary">
-          <div class="panel-heading">
-            <h3 class="panel-title">State Info</h3>
-            <br>
-            <select id="selDataset"></select>
-          </div>
-          <div id="sample-metadata" class="panel-body">
-          </div>
-        </div>-->
-      </div>
-      <div class="col-md-8">
-        <div id="chartdiv"></div>
+       
+        <div id="chartdiv"><br></div>
+      
       </div>
     </div>
  
-
+    <div id="ceremony"></div>
     <!------maps go here-->
     <div class="row">
-      <div class="col-md-12">
-        <div id="ice"></div>
+
       </div>
     </div>
   </div>
@@ -104,6 +112,7 @@
   <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
   <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
   <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+  <script src="https://d3js.org/d3-timer.v1.min.js"></script>
   <script src="https://d3js.org/d3.v5.min.js"></script>   
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script src="https://d3js.org/d3.v5.min.js"></script>
