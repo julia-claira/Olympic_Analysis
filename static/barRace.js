@@ -8,15 +8,7 @@
 var flaskRace_db=JSON.parse(bar_race_db).data;
 var reset=false;//resets if at end of graph
 
-console.log(flaskRace_db);
 
-/*var summerYears=[1896, 1900, 1904, 1908, 1912, 1920, 1924, 1928, 1932, 1936, 1948, 1952, 1956, 1960,
-  1964, 1968, 1972, 1976, 1980, 1984, 1988, 1992, 1996, 2000, 2004, 2008, 2012, 2016];
-var winterYears=[1924, 1928, 1932, 1936, 1948, 1952, 1956, 1960, 1964, 1968, 1972, 1976, 1980,
-  1984, 1988, 1992, 1994, 1998, 2002, 2006, 2010, 2014];
-var filterYears=[1892,1896, 1900, 1904, 1908, 1912, 1920, 1924, 1928, 1932, 1936, 1948, 1952, 1956, 1960,
-    1964, 1968, 1972, 1976, 1980, 1984, 1988, 1992, 1994, 1996, 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2014, 2016];
- */ 
 //runs through and stores all the unique countries in the list
 var theCountries=[];
 for (i=0;i<flaskRace_db.length;i++){
@@ -24,20 +16,7 @@ for (i=0;i<flaskRace_db.length;i++){
    else {theCountries.push(flaskRace_db[i].Name)};        
 };
 
-/*
-//this allows me to check individual information to verify country medals
-var tempCount=0
-var lastCount=0;
-for(i=0;i<flaskRace_db.length;i++){
-  if(flaskRace_db[i].Name==='France' && flaskRace_db[i].Season==='Summer'){
-    tempCount=tempCount+flaskRace_db[i].Medals_Won;
-    //console.log(flaskRace_db[i]);
-  }
-};
-  console.log(tempCount);
-  console.log(lastCount);
 
-*///!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 var winterSports=[];
 var winterSportsMen=[];
 var winterSportsWomen=[];
@@ -354,7 +333,6 @@ var resetButton=d3.select("#race");
 resetButton.on("click", function(){filterBars()})
 
 //------------------------------------------
-    
 
 
 
@@ -365,6 +343,7 @@ am4core.useTheme(am4themes_animated);
 
 //function to create award ceremony
 function awardCeremony(allData){
+  d3.select("#myChart").html("");
   
   myKeys=Object.keys(allData)
   var newData = allData[[myKeys[myKeys.length-1]]];
@@ -377,7 +356,7 @@ function awardCeremony(allData){
 
   svgA=110;
   var newShape=d3.select("#simpleShapes");
-  var square=newShape.append("svg").attr("width","100%").attr("height",300);
+  var square=newShape.append("svg").attr("width","100%").attr("height",500);
   //square.html("");
 
   square.append("rect").attr("id","firstS").attr("width", 170).attr("height", 120).attr("x", 225+svgA).attr("y", 320).style("stroke", "purple").style("fill","#4880C4");
@@ -434,7 +413,8 @@ function awardCeremony(allData){
 
 
 function startAgain(allData){
-console.log(allData);
+  d3.select("#myChart").html("");
+  d3.select("#myChart").append("div").attr("id","chartdiv");
   //reset div and values
   reset=false;
   d3.select("#simpleShapes").html("");
@@ -492,7 +472,7 @@ console.log(allData);
     
 
 
-  d3.select("#graph_sub").html(partB+partA+partC+partD);
+  d3.select("#graph_sub").html(partB+partA+partC+'<br>'+partD);
 
 
 
