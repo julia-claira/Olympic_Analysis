@@ -4,7 +4,7 @@ from sqlalchemy import inspect
 #import our functions
 from bar_race import julia_bar_race
 from hostsmap import hosts_map
-from olydata4bar import oly 
+from olydatabar import britt_bar 
 
 #create app
 app = Flask(__name__)
@@ -17,7 +17,7 @@ def index():
     our_info= {
        "julia": julia_bar_race().to_json(orient='table',index=False),
        "kristajoy" : hosts_map().to_json(orient='table',index=False),
-        "britt" : oly().to_json(orient='table',index=False)
+        "britt" : britt_bar().to_json(orient='table',index=False)
     }
    
     return render_template("index.html", the_data=our_info)
