@@ -28,6 +28,7 @@
     <script type="text/javascript">
     var bar_race_db = {{the_data.julia|tojson|safe}}//julia's information from flask
     var hosts_db = {{the_data.kristajoy|tojson|safe}}//k's info
+    var medal_bar_db = {{the_data.britt|tojson|safe}}//k's info
     </script>
   
 </script>
@@ -41,25 +42,28 @@
 
   <div class="container-fluid">
 
-      <!--------------State-->
-    <div class="row">
+    <!--------------State-->
+ <!---   <div class="row">
       <div class="col-md-12 jumbotron text-center" style="background-image: linear-gradient(to bottom,
       rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.6) 100%), url(../static/Olympic_rings.jpeg)">
         <div id="bottom">
           <center>
-        <h1>Olympic Games Dashboard</h1>
-        <p>Data for Summer and Winter up to 2016</p></center></div>
+          <h1>Olympic Games Dashboard</h1>
+          <p>Data for Summer and Winter up to 2016</p></center>
+        </div>
       </div>
     </div>
+      
+    
+      
     <div class="row">
       <div class="col-md-3">
         <p></p><br>
-      <div class="panel panel-danger">
-        <div class="panel-heading">
-          
-          <center> <h3 class="panel-title">Medal Winners Filter</h3></center>
-        </div>
-        <div id="sample-metadata" class="panel-body">
+        <div class="panel panel-danger">
+          <div class="panel-heading">
+            <center> <h3 class="panel-title">Medal Winners Filter</h3></center>
+          </div>
+          <div id="sample-metadata" class="panel-body">
             <input type="checkbox" id="Summer" name="Summer" value="Summer" checked>
             <label for="Summer"> Summer </label>
             <input type="checkbox" id="Winter" name="Winter" value="Winter">
@@ -85,51 +89,46 @@
             <br><br>
 
             <button type="button" id='race'>Start Medal Race</button></center>
-            </div>
-
           </div>
-        </c>
         </div>
+      </div>
 
 
       <div class="col-md-9">
         <center><h1 id="graph_sub">The Top Ten Country Medal Count Over Time</1></center>
-        
         <div id="simpleShapes" width="100%" height="300px">
-        
           <svg width="100%" height="500">
-
-          
-          <circle cx="600" cy="225" r="100" fill=#A77044 stroke=#7f5432 stroke-width=6></circle>
-          <text x="548" y="290" fill="#7f5432" font-size="180px", font-weight="bold">3</text>
-          <circle cx="325" cy="210" r="100" fill=#A7A7AD stroke=#828287 stroke-width=6></circle>
-          <text x="275" y="270" fill="#828287" font-size="180px", font-weight="bold">2</text>
-          <circle cx="465" cy="290" r="110" fill=#D6AF36 stroke=#a4862a stroke-width=6></circle>
-          <text x="415" y="350" fill="#a4862a" font-size="180px", font-weight="bold">1</text>
-            .attr("width", 170).attr("height", 120).attr("x", 225+svgA).attr("y", 320).style("stroke", "purple").style("fill","#4880C4");
+            <circle cx="600" cy="225" r="100" fill=#A77044 stroke=#7f5432 stroke-width=6></circle>
+            <text x="548" y="290" fill="#7f5432" font-size="180px", font-weight="bold">3</text>
+            <circle cx="325" cy="210" r="100" fill=#A7A7AD stroke=#828287 stroke-width=6></circle>
+            <text x="275" y="270" fill="#828287" font-size="180px", font-weight="bold">2</text>
+            <circle cx="465" cy="290" r="110" fill=#D6AF36 stroke=#a4862a stroke-width=6></circle>
+            <text x="415" y="350" fill="#a4862a" font-size="180px", font-weight="bold">1</text>
+              .attr("width", 170).attr("height", 120).attr("x", 225+svgA).attr("y", 320).style("stroke", "purple").style("fill","#4880C4");
           </svg>
-        <!--<svg width="100%" height="300">-->
-        
-        <div width="100%">
-          
         </div>
+          <div id="chartdiv"><br></div>
       </div>
-        
-        <div id="chartdiv"><br></div>
-      
-      </div>
-    </div>
-  
-    <div id="ceremony"></div>
+    </div>-->
  
-
   <!-- map goes here -->
+  <!--<div class="row">
     <div class="col-md-12">
         <div id="map"></div>
     </div>
+  </div>-->
+<!--britt-->
+  <div class="row">
+    <div class="col-md-12">
+        <div class="well">
+          <h5>Year</h5>
+          <select id="seldDataset" onchange="changeDate(this.value)"></select>
+          <div id="Bar"></div>
+        </div>
+    </div>
   </div>
 
-
+</div>
 
   <!-- Resources -->
   <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
@@ -144,8 +143,9 @@
 
   <!-- JS key -->
   <script src="static/config.js"></script>
-  <script src="static/barRace.js"></script>
-  <script src="static/hostsMap.js"></script>
+  <!--<script src="static/barRace.js"></script>-->
+  <!--<script src="static/hostsMap.js"></script>-->
+  <script src="static/bar.js"></script>
   
   
 </body>
