@@ -7,8 +7,8 @@
 //Pulls db from flask
 var flaskRace_db=JSON.parse(bar_race_db).data;
 var reset=false;//resets if at end of graph
-d3.select("#graph_name").html("Medal Count Over Time")
 
+console.log(flaskRace_db);
 
 /*var summerYears=[1896, 1900, 1904, 1908, 1912, 1920, 1924, 1928, 1932, 1936, 1948, 1952, 1956, 1960,
   1964, 1968, 1972, 1976, 1980, 1984, 1988, 1992, 1996, 2000, 2004, 2008, 2012, 2016];
@@ -37,9 +37,13 @@ for(i=0;i<flaskRace_db.length;i++){
   console.log(tempCount);
   console.log(lastCount);
 
-*/
+*///!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 var winterSports=[];
+var winterSportsMen=[];
+var winterSportsWomen=[];
 var summerSports=[];
+var summerSportsMen=[];
+var summerSportsWomen=[];
 for (i=0;i<flaskRace_db.length;i++){
     if (winterSports.includes(flaskRace_db[i].Sport)){}
     else {
@@ -55,32 +59,126 @@ for (i=0;i<flaskRace_db.length;i++){
     };        
 };
 
+for (i=0;i<flaskRace_db.length;i++){
+
+  //Winter Both
+  if (winterSports.includes(flaskRace_db[i].Sport)){}
+  else {
+    if( flaskRace_db[i].Season=='Winter'){
+      winterSports.push(flaskRace_db[i].Sport)
+    }
+  }
+
+  //Winter Men
+  if (winterSportsMen.includes(flaskRace_db[i].Sport)){}
+  else {
+    if(flaskRace_db[i].Season=='Winter' && flaskRace_db[i].Sex=='M'){
+      winterSportsMen.push(flaskRace_db[i].Sport)
+    }
+  }
+
+  //Winter Women
+  if (winterSportsWomen.includes(flaskRace_db[i].Sport)){}
+  else {
+    if(flaskRace_db[i].Season=='Winter' && flaskRace_db[i].Sex=='F'){
+      winterSportsWomen.push(flaskRace_db[i].Sport)
+    }
+  }
+
+  //Summer Both
+  if (summerSports.includes(flaskRace_db[i].Sport)){}
+  else {
+    if( flaskRace_db[i].Season=='Summer'){
+      summerSports.push(flaskRace_db[i].Sport)
+    }  
+  };
+  
+  //Summer Men
+  if (summerSportsMen.includes(flaskRace_db[i].Sport)){}
+  else {
+    if(flaskRace_db[i].Season=='Summer' && flaskRace_db[i].Sex=='M'){
+      summerSportsMen.push(flaskRace_db[i].Sport)
+    }
+  }
+
+  //Winter Women
+  if (summerSportsWomen.includes(flaskRace_db[i].Sport)){}
+  else {
+    if(flaskRace_db[i].Season=='Summer' && flaskRace_db[i].Sex=='F'){
+      summerSportsWomen.push(flaskRace_db[i].Sport)
+    }
+  }
+
+
+  
+};
+
+//alphabetize dropdown lists
+winterSportsWomen=winterSportsWomen.sort();
+winterSportsMen=winterSportsMen.sort();
+winterSports=winterSports.sort();
+summerSportsWomen=summerSportsWomen.sort();
+summerSportsMen=summerSportsMen.sort();
+summerSports=summerSports.sort();
+
 am4core.ready(function() {
 
 
+
 function addDropValues(){
+  var sexFilter=d3.select('input[name="Sex"]:checked');
+
   idField.html("");
   idField.append("option").text('all sports').attr('value','all sports');
-  if (summerBox.property('checked')){
+  
+  //add summer and/or winter if both sexes are selected
+  if (summerBox.property('checked') && sexFilter.attr("value")==="Both"){
     summerSports.forEach(sport => {
       idField.append("option").text(sport).attr('value',sport);
     });
   }
-  if (winterBox.property('checked')){
+  if (winterBox.property('checked') && sexFilter.attr("value")==="Both"){
     winterSports.forEach(sport => {
       idField.append("option").text(sport).attr('value',sport);
     });
   }
+
+  //add summer and/or winter if both only men are selected
+  if (summerBox.property('checked') && sexFilter.attr("value")==="Men"){
+    summerSportsMen.forEach(sport => {
+      idField.append("option").text(sport).attr('value',sport);
+    });
+  }
+  if (winterBox.property('checked') && sexFilter.attr("value")==="Men"){
+    winterSportsMen.forEach(sport => {
+      idField.append("option").text(sport).attr('value',sport);
+    });
+  }
+
+  //add summer and/or winter if both only women are selected
+  if (summerBox.property('checked') && sexFilter.attr("value")==="Women"){
+    summerSportsWomen.forEach(sport => {
+      idField.append("option").text(sport).attr('value',sport);
+    });
+  }
+  if (winterBox.property('checked') && sexFilter.attr("value")==="Women"){
+    winterSportsWomen.forEach(sport => {
+      idField.append("option").text(sport).attr('value',sport);
+    });
+  }
+
+
 };
 
 //changes sports in the dropdown field when winter or summer is checked
 var idField= d3.select("#selDataset");
 var summerBox= d3.select("#Summer");
 var winterBox= d3.select("#Winter");
+var sexFilter=d3.selectAll('#sex');
 
 summerBox.on("change", addDropValues);
 winterBox.on("change", addDropValues);
-
+sexFilter.on("change", addDropValues);
 
 
 
@@ -136,6 +234,7 @@ function filterBars(){
      // make sure the current row matches criteria
     if(row.Season==='Summer' && filters['summer']){count=true};
     if (row.Season==='Winter' && filters['winter']){count=true};
+    if (filters['summer']===false & filters['winter']===false){count=true};
 
     if (count===true){
       if (row.Sex==="M"){
@@ -155,9 +254,12 @@ function filterBars(){
       if (row.Medal==="Gold" && filters['gold'])count=true;
       else if (row.Medal==="Silver" && filters['silver'])count=true;
       else if (row.Medal==="Bronze" && filters['bronze'])count=true;
+      else if (filters['gold']===false && filters['silver']===false && filters['bronze']===false){
+        count=true;
+      }
       else {count=false};
     }
-
+ 
   
     if (filters['sport']=='all sports'){}
     else if (row.Sport != filters['sport']){
@@ -278,9 +380,9 @@ function awardCeremony(allData){
   var square=newShape.append("svg").attr("width","100%").attr("height",300);
   //square.html("");
 
-  square.append("rect").attr("id","firstS").attr("width", 170).attr("height", 120).attr("x", 225+svgA).attr("y", 320).style("stroke", "purple").style("fill","white");
-  square.append("rect").attr("id","secondS").attr("width", 170).attr("height", 120).attr("x", 125+svgA).attr("y", 395).style("stroke", "purple").style("fill","white");
-  square.append("rect").attr("id","thirdS").attr("width", 170).attr("height", 120).attr("x", 325+svgA).attr("y", 420).style("stroke", "purple").style("fill","white");
+  square.append("rect").attr("id","firstS").attr("width", 170).attr("height", 120).attr("x", 225+svgA).attr("y", 320).style("stroke", "purple").style("fill","#4880C4");
+  square.append("rect").attr("id","secondS").attr("width", 170).attr("height", 120).attr("x", 125+svgA).attr("y", 395).style("stroke", "purple").style("fill","#5DA557");
+  square.append("rect").attr("id","thirdS").attr("width", 170).attr("height", 120).attr("x", 325+svgA).attr("y", 420).style("stroke", "purple").style("fill","#E9B040");
 
   box1=d3.select("#firstS").transition();
   box1.attr("transform", "translate(0,-205)").duration(2500);
@@ -288,13 +390,17 @@ function awardCeremony(allData){
   box2.attr("transform", "translate(0,-205)").duration(2500);
   box3=d3.select("#thirdS").transition();
   box3.attr("transform", "translate(0,-205)").duration(2500);
-  console.log('hi');
+  
 
 
 
-  square.append("text").attr("id","first").text(number1).attr("x", 260+svgA).attr("y", -105);
-  square.append("text").attr("id","second").text(number2).attr("x", 145+svgA).attr("y", -125);
-  square.append("text").attr("id","third").text(number3).attr("x", 405+svgA).attr("y", -100);
+  square.append("text").attr("id","first").text(number1).attr("x", 225+svgA).attr("y", -105).attr("font-size", "28px").attr("font-weight","bold");;
+  square.append("text").attr("id","second").text(number2).attr("x", 100+svgA).attr("y", -125).attr("font-size", "28px").attr("font-weight","bold");;
+  square.append("text").attr("id","third").text(number3).attr("x", 405+svgA).attr("y", -100).attr("font-size", "28px").attr("font-weight","bold");;
+
+  square.append("text").attr("id","firstA").text('1').attr("x", 290+svgA).attr("y", 395).attr("fill", "#fff").attr("font-size", "70px").attr("font-weight","bold");
+  square.append("text").attr("id","secondB").text('2').attr("x", 185+svgA).attr("y", 475).attr("fill", "#fff").attr("font-size", "70px").attr("font-weight","bold");
+  square.append("text").attr("id","thirdC").text('3').attr("x", 390+svgA).attr("y", 495).attr("fill", "#fff").attr("font-size", "70px").attr("font-weight","bold");
 
   /*
   square.append("text").attr("id","fourth1").text("4th China").attr("x", 950).attr("y", 150);
@@ -314,17 +420,25 @@ function awardCeremony(allData){
   text3=d3.select("#third").transition();
   text3.attr("transform", "translate(0,300)").duration(2500);
 
-  text4=d3.select("#fourth1").transition();
-  text4.attr("transform", "translate(-400,0)").duration(2500);
+  text1A=d3.select("#firstA").transition();
+  text1A.attr("transform", "translate(0,-205)").duration(2500);
+
+  text2B=d3.select("#secondB").transition();
+  text2B.attr("transform", "translate(0,-205)").duration(2500);
+
+  text3C=d3.select("#thirdC").transition();
+  text3C.attr("transform", "translate(0,-205)").duration(2500);
+
+
 }
 
 
 function startAgain(allData){
-  
+console.log(allData);
   //reset div and values
   reset=false;
   d3.select("#simpleShapes").html("");
-
+  
 
 
   var filterYears=Object.keys(allData);
@@ -351,22 +465,28 @@ function startAgain(allData){
     };
 
     if(filters['summer'] && filters['winter'] && filters['sport']==="all sports"){
-      var partA="Summer and Winter Olympics";
+      var partA="Summer and Winter Games";
     }
     else if (filters['sport']!="all sports") var partA=filters['sport'];
-    else if (filters['summer'] && filters['winter']===false)var partA="Summer Olympics";
-    else {var partA="Winter Olympics"};
+    else if (filters['summer'] && filters['winter']===false)var partA="Summer Games";
+    else if (filters['summer']===false && filters['winter']===false){
+      var partA="Summer and Winter Games";
+    }
+    else {var partA="Winter Games"};
 
     if(filters['sex']==='Men')var partB="Men's ";
     else if (filters['sex']==='Women')var partB="Women's ";
-    else var partB="Men's and Women's ";
+    else var partB="Men's & Women's ";
 
-    var partC=` ${filterYears[1]} - ${filterYears[filterYears.length-1]}`;
+    var partC=` ${filterYears[1]}-${filterYears[filterYears.length-1]}`;
 
     var partD=" ("
     if (filters['gold'])var partD=partD+" gold ";
     if (filters['silver'])var partD=partD+" silver ";
     if (filters['bronze'])var partD=partD+" bronze ";
+    if(filters['bronze']===false && filters['silver']===false && filters['gold']===false){
+      var partD=[' (gold silver bronze'];
+    };
     partD=partD+")";
 
     
@@ -457,11 +577,12 @@ var yearIndex=0;
 label.text = `Go!`;
 label.align="center";
 label.y=200;
-label.x=100;
+label.x=95;
 
 var interval;
 
 function play(allData) {
+
   if (reset===true){
     chart.dispose();
     awardCeremony(allData);
@@ -476,11 +597,19 @@ function play(allData) {
   nextYear();
 }
 
-
+//@$%$#@$%@##########^^$^^$^$#^#$^$%#$@$!$$@@$#@!%%#$@%@%#%#%#%#%#%#%@!@%#@%%%@##@%!%%@#@#%@!
 function stop() {
   if (interval) {
     clearInterval(interval);
     if (reset===true){
+      var label2 = chart.plotContainer.createChild(am4core.Label);
+      label2.x = am4core.percent(97);
+      label2.y = am4core.percent(95);
+      label2.horizontalCenter = "right";
+      label2.verticalCenter = "middle";
+      label2.dx = -15;
+      label2.fontSize = 25;
+      label2.text="Award Ceremony";
       playButton.isActive = false;
 
 
@@ -490,23 +619,23 @@ function stop() {
 
 function nextYear() {
 
-  reset=false;
+  //
   yearIndex++;
   year=parseInt(filterYears[yearIndex]);
 
   //if (filterYears.includes(year)){
     
-
+//@$%$#@$%@##########^^$^^$^$#^#$^$%#$@$!$$@@$#@!%%#$@%@%#%#%#%#%#%#%@!@%#@%%%@##@%!%%@#@#%@!
     if (year==1916)year=1920;//dates where there are no olympics
     if (year==1940)year=1948;//dates where there are no olympics
    
     if (yearIndex>=filterYears.length-1) {//change this to adjust year for my dataset
+
       reset=true;
-      d3.select("#ceremony").append("svg").append("text").text('hot dog').attr("x", 260).attr("y", 05);
       stop();
 
     }
-
+    if (yearIndex<=filterYears.length-1){
     //Julia's Code -- so here I added code to temporarily set any country not in the top ten to 0 medals for that year
     var newData = allData[year];
     var tempData=newData.slice(0).sort((a, b) => (a.MEDALS > b.MEDALS) ? 1 : -1);//sorts data by number of medals
@@ -549,6 +678,7 @@ function nextYear() {
     //d3.select("#graph_name").html(`${cityOlympics(year)} ${year.toString()}`)
 
     categoryAxis.zoom({ start: 0, end: itemsWithNonZero / categoryAxis.dataItems.length });
+  }
   }
 
 

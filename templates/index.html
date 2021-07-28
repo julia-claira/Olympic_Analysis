@@ -17,12 +17,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Bellybutton Biodiversity</title>
+  <title>Olympic Medals</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
   crossorigin="" />
-  <!--<link rel="stylesheet" type="text/css" href="style.css">-->
+  <link rel="stylesheet" type="text/css" href="../static/style.css">
 
   <!--Code to bring db into my js bar race chart-->
   <script type="text/javascript">
@@ -39,15 +39,18 @@
 
       <!--------------State-->
     <div class="row">
-      <div class="col-md-12 jumbotron text-center">
-        <h1>Olympics</h1>
-        <p>Use the interactive charts below to explore the dataset</p>
+      <div class="col-md-12 jumbotron text-center" style="background-image: linear-gradient(to bottom,
+      rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.6) 100%), url(../static/Olympic_rings.jpeg)">
+        <div id="bottom">
+          <center>
+        <h1>Olympic Games Dashboard</h1>
+        <p>Data for Summer and Winter up to 2016</p></center></div>
       </div>
     </div>
     <div class="row">
       <div class="col-md-3">
-        <p></p><br><br>
-      <div class="panel panel-primary">
+        <p></p><br>
+      <div class="panel panel-danger">
         <div class="panel-heading">
           
           <center> <h3 class="panel-title">Medal Winners Filter</h3></center>
@@ -57,9 +60,9 @@
             <label for="Summer"> Summer </label>
             <input type="checkbox" id="Winter" name="Winter" value="Winter">
             <label for="Winter"> Winter Games</label><br>
-            <input type="radio" name = "Sex" value="Men"> Men's
-            <input type="radio" name = "Sex" value="Women"> Women's
-            <input type="radio" name = "Sex" value="Both" checked> Both<br><br>
+            <input type="radio" name = "Sex" value="Men" id="sex"> Men's
+            <input type="radio" name = "Sex" value="Women" id="sex"> Women's
+            <input type="radio" name = "Sex" value="Both" checked id="sex"> Both<br><br>
             <input type="checkbox" id="Gold" name="Gold" value="Gold" checked >
             <label for="Gold"> Gold Medals </label><br>
             <input type="checkbox" id="Silver" name="Silver" value="Silver" checked>
@@ -74,7 +77,7 @@
             1 <input type="radio" name = "speed" value="1" checked> 
             2 <input type="radio" name = "speed" value="2.2">
             4 <input type="radio" name = "speed" value="3.1">
-            16 <input type="radio" name = "speed" value="200">
+            16 <input type="radio" name = "speed" value="10">
             <br><br>
 
            <button type="button" id='race'>Start Medal Race</button></center>
@@ -86,9 +89,21 @@
 
 
       <div class="col-md-9">
-       <center><h3 id="graph_sub">Medal Count Over Time</h3></center>
+       <center><h1 id="graph_sub">The Top Ten Country Medal Count Over Time</1></center>
        
        <div id="simpleShapes" width="100%" height="300px">
+       
+         <svg width="100%" height="500">
+
+          
+          <circle cx="600" cy="225" r="100" fill=#A77044 stroke=#7f5432 stroke-width=6></circle>
+          <text x="548" y="290" fill="#7f5432" font-size="180px", font-weight="bold">3</text>
+          <circle cx="325" cy="210" r="100" fill=#A7A7AD stroke=#828287 stroke-width=6></circle>
+          <text x="275" y="270" fill="#828287" font-size="180px", font-weight="bold">2</text>
+          <circle cx="465" cy="290" r="110" fill=#D6AF36 stroke=#a4862a stroke-width=6></circle>
+          <text x="415" y="350" fill="#a4862a" font-size="180px", font-weight="bold">1</text>
+            .attr("width", 170).attr("height", 120).attr("x", 225+svgA).attr("y", 320).style("stroke", "purple").style("fill","#4880C4");
+         </svg>
         <!--<svg width="100%" height="300">-->
         
         <div width="100%">
