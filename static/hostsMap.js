@@ -54,8 +54,8 @@ for (var i = 0; i < hosts.length; i++) {
 
 };
 
-console.log(summerMarkers);
-console.log(winterMarkers);
+// console.log(summerMarkers);
+// console.log(winterMarkers);
 
 // Create overlays
 var summer = L.layerGroup(summerMarkers);

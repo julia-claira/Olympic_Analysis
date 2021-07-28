@@ -29,6 +29,7 @@
     <script type="text/javascript">
     var bar_race_db = {{the_data.julia|tojson|safe}}//julia's information from flask
     var hosts_db = {{the_data.kristajoy|tojson|safe}}//k's info
+    var medals_db = {{the_data.kj|tojson|safe}}
     var medal_bar_db = {{the_data.britt|tojson|safe}}//Britt's info
     </script>
   
@@ -56,7 +57,7 @@
     </div>
       
     
-     <!--Julia Claira's graph----------------------------------------------------------------------------- 
+<!-- Julia Claira's graph -->
     <div class="row">
       <div class="col-md-1"></div>
       <div class="col-md-3">
@@ -114,28 +115,53 @@
       </div>
       <div class="col-md-1"></div>
     </div>
- --------------------------------------------------------------->
-  <!-- KJ's Map-------------------------------------------------
-  <div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-8">
-        <div id="map"></div>
-    </div>
-    <div class="col-md-2"></div>
-  </div>
-  ----------------------------------------------->
-<!--Britt's Graph------------------>
-  <div class="row">
-    <div class="col-md-12">
-        <div class="well">
-          <h5>Year</h5>
-          <select id="seldDataset" onchange="changeDate(this.value)"></select>
-          <div id="Bar"></div>
-        </div>
-    </div>
-  </div>
+ 
+  
+<!-- Britt's Graph -->
+    <div class="row">
+      <hr>
+      <div class="col-md-12">
+          <div class="well">
+            <h5>Year</h5>
+            <select id="seldDataset" onchange="changeDate(this.value)"></select>
+            <div id="Bar"></div>
+          </div>
+      </div>
+      <hr>
+     </div>
 
-</div>
+<!-- KJ's Charts -->
+    <div class="row">
+      <hr>
+      <div class="col-md-2">
+        <div class="dropdown">
+          <h5>Country:</h5>
+          <select id="selCountry" onchange="optionChanged(this.value)"></select>
+        </div>
+        <img src="../static/Images/legend.jpg" alt="legend">
+      </div>
+      <div class="col-md-5">
+        <center><h2>Total Medals </h2></center>
+        <div id="pie1"></div>
+      </div>
+      <div class="col-md-5">
+        <center><h2>Medals by Gender</h2></center>
+        <div id="pie2"></div>
+      </div>
+      <hr>
+    </div>
+
+<!-- KJ's Map -->
+    <div class="row">
+    <hr>
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+          <div id="map"></div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+
+  </div>
 
   <!-- Resources -->
   <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
@@ -150,9 +176,10 @@
 
   <!-- JS key -->
   <script src="static/config.js"></script>
-  <!--<script src="static/barRace.js"></script>
-  <script src="static/hostsMap.js"></script>-->
+  <script src="static/barRace.js"></script>
   <script src="static/bar.js"></script>
+  <script src="static/pie.js"></script>
+  <script src="static/hostsMap.js"></script>
   
   
 </body>
