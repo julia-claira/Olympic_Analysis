@@ -122,7 +122,7 @@ def julia_bar_race ():
         "KAZ": "Kazakhstan",
         "KEN": "Kenya",
         "KGZ": "Kyrgyzstan",
-        "KOR": "Korea",
+        "KOR": "South Korea",
         "KSA": "Saudi Arabia",
         "KUW": "Kuwait",
         "LAT": "Latvia",

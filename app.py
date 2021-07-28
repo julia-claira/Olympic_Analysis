@@ -6,6 +6,7 @@ from bar_race import julia_bar_race
 from hostsmap import hosts_map
 from olydatabar import britt_bar 
 from medal_data import pie_chart
+from line_gdp import myGDP
 
 #create app
 app = Flask(__name__)
@@ -19,7 +20,8 @@ def index():
        "julia": julia_bar_race().to_json(orient='table',index=False),
        "kristajoy" : hosts_map().to_json(orient='table',index=False),
         "britt" : britt_bar().to_json(orient='table',index=False),
-        "kj": pie_chart().to_json(orient='table',index=False)
+        "kj": pie_chart().to_json(orient='table',index=False),
+        "juliaGDP" : myGDP().to_json(orient='table',index=False)
     }
    
     return render_template("index.html", the_data=our_info)

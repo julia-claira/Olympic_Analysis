@@ -6,7 +6,9 @@
 
 //Pulls db from flask
 var flaskRace_db=JSON.parse(bar_race_db).data;
+var gdpData=JSON.parse(julia_gdp_db).data;
 var reset=false;//resets if at end of graph
+//console.log(flaskRace);gdpData
 
 
 //runs through and stores all the unique countries in the list
@@ -160,7 +162,120 @@ winterBox.on("change", addDropValues);
 sexFilter.on("change", addDropValues);
 
 
+//function to draw gdp graph------------------
+function gdpGraphs(allData){
 
+  console.log(d3.select("#graph_sub").text())
+  function findCountry(c1){
+    
+    var data1=[];
+
+    for (i=0;i<gdpData.length;i++){
+      if (gdpData[i].myCNames===c1){
+        data1.push(gdpData[i]);   
+      }
+    }
+    if (data1.length===0) var data1=[0];
+    return data1;
+  };
+
+  myKeys=Object.keys(allData)
+  var newData = allData[[myKeys[myKeys.length-1]]];
+  var tempData=newData.slice(0).sort((a, b) => (a.MEDALS > b.MEDALS) ? -1 : 1);//sorts data by number of medals
+
+  c1=findCountry(tempData[0].country);
+  c2=findCountry(tempData[1].country);
+  c3=findCountry(tempData[2].country);
+  c4=findCountry(tempData[3].country);
+  c5=findCountry(tempData[4].country);
+  c6=findCountry(tempData[5].country);
+  c7=findCountry(tempData[6].country);
+  c8=findCountry(tempData[7].country);
+  c9=findCountry(tempData[8].country);
+  c10=findCountry(tempData[9].country);
+
+  cFinal=[c1,c2,c3,c4,c5,c6,c7,c8,c9,c10];
+  console.log(cFinal)
+  createLine(cFinal)
+
+    //LINE GRAPH DRAW
+    function createLine(gdp){
+
+      var traces=[]
+      for(i=0;i<=gdp.length-1;i++){
+        if(gdp[i]!=0){
+        var trace1 = {
+
+            type: 'line', 
+            showInLegend: true,
+            x: gdp[i].map(row=>row['Year']),
+            y: gdp[i].map(row=>row['Value']),
+            yaxis: 'y2',
+            name: `${gdp[i][0].myCNames}`,
+        };
+        traces.push(trace1);
+      }}
+
+      var myData=traces;
+
+      //Layout and Plot
+      var layout = {
+        autosize: false,
+  
+        margin: {
+            l: 70,
+            r: 200,
+            b: 100,
+            t: 130,
+            pad: 4
+        },
+        title: {
+          text:"GDP (USD) For Below Top Ten Medal Winners",
+          font: {
+            family: 'Courier New, monospace',
+            size: 24
+          },
+          xref: 'paper',
+          x: 0.05,
+        },
+        xaxis: {
+          title: {
+            text: '',
+            font: {
+              family: 'Courier New, monospace',
+              size: 18,
+              color: '#7f7f7f'
+            }
+          },
+        },
+        legend: {
+          y: 1,
+          x: 1.1,
+          bgcolor: 'transparent',
+        },
+        xanchor: 'left',
+        display:'none',
+        hovermode:'x unified',
+        yaxis: {
+          visible: true,
+          title: {
+            text: 'y Axisadasfafasasd',
+            font: {
+              family: 'Courier New, monospace',
+              size: 1,
+              color: ''
+            }
+          }
+        }
+      };
+
+      
+      Plotly.newPlot(graphLocation, myData,layout=layout,{displayModeBar: false});
+
+
+}
+
+}
 
 
 
@@ -591,6 +706,7 @@ function stop() {
       label2.fontSize = 25;
       label2.text="Award Ceremony";
       playButton.isActive = false;
+      gdpGraphs(allData)
 
 
     }
@@ -680,6 +796,8 @@ function nextYear() {
 
 
 }); // end am4core.ready()
+
+
 
 
 
