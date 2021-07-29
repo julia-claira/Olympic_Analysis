@@ -469,14 +469,14 @@ function awardCeremony(allData){
   number3=tempData[2].country;
 
 
-  svgA=110;
+  svgA=195;
   var newShape=d3.select("#simpleShapes");
   var square=newShape.append("svg").attr("width","100%").attr("height",500);
   //square.html("");
 
-  square.append("rect").attr("id","firstS").attr("width", 170).attr("height", 120).attr("x", 225+svgA).attr("y", 320).style("stroke", "purple").style("fill","#4880C4");
-  square.append("rect").attr("id","secondS").attr("width", 170).attr("height", 120).attr("x", 125+svgA).attr("y", 395).style("stroke", "purple").style("fill","#5DA557");
-  square.append("rect").attr("id","thirdS").attr("width", 170).attr("height", 120).attr("x", 325+svgA).attr("y", 420).style("stroke", "purple").style("fill","#E9B040");
+  square.append("rect").attr("id","firstS").attr("width", 170).attr("height", 120).attr("x", 225+svgA).attr("y", 320).style("fill","#4880C4");
+  square.append("rect").attr("id","secondS").attr("width", 170).attr("height", 120).attr("x", 125+svgA).attr("y", 395).style("fill","#5DA557");
+  square.append("rect").attr("id","thirdS").attr("width", 170).attr("height", 120).attr("x", 325+svgA).attr("y", 420).style("fill","#E9B040");
 
   box1=d3.select("#firstS").transition();
   box1.attr("transform", "translate(0,-205)").duration(2500);
@@ -534,6 +534,21 @@ function startAgain(allData){
   reset=false;
   d3.select("#simpleShapes").html("");
   
+ 
+
+  //if race is restarted in middle of current one this will kill the old one
+  function incomplete(){
+    chart.dispose();
+    var resetButton=d3.select("#race");
+    resetButton.on("click", function(){incomplete()})
+    filterBars();
+
+  }
+
+  //sets the restart button to kill old one first
+  var resetButton=d3.select("#race");
+  resetButton.on("click", function(){incomplete()})
+
 
 
   var filterYears=Object.keys(allData);
@@ -715,13 +730,14 @@ function stop() {
 
 function nextYear() {
 
+  
   //
   yearIndex++;
   year=parseInt(filterYears[yearIndex]);
 
   //if (filterYears.includes(year)){
     
-//@$%$#@$%@##########^^$^^$^$#^#$^$%#$@$!$$@@$#@!%%#$@%@%#%#%#%#%#%#%@!@%#@%%%@##@%!%%@#@#%@!
+
     if (year==1916)year=1920;//dates where there are no olympics
     if (year==1940)year=1948;//dates where there are no olympics
    
