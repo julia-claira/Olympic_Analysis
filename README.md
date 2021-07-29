@@ -1,5 +1,5 @@
 # Olympic Games Dashboard
-Group project creating a Flask app which shows a breakdown of select Olympics data. Our main datasource contained info from 1896–2016.
+Group project creating a Flask app which shows a breakdown of select Olympics data. Our main datasource contained info from 1896–2016. [Source Data](https://www.kaggle.com/rio2016/olympic-games): Rio 2016 website with data files created by: GitHub user flother.
 ### Bar Race 
 tk
 ### Scatter Chart
