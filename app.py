@@ -4,7 +4,7 @@ from sqlalchemy import inspect
 #import our functions
 from bar_race import julia_bar_race
 from hostsmap import hosts_map
-from olydatabar import britt_bar 
+from britt_bar import countrymedals 
 from medal_data import pie_chart
 from line_gdp import myGDP
 from correlation import corr_data
@@ -20,7 +20,7 @@ def index():
     our_info= {
        "julia": julia_bar_race().to_json(orient='table',index=False),
        "kristajoy" : hosts_map().to_json(orient='table',index=False),
-        "britt" : britt_bar().to_json(orient='table',index=False),
+        "britt" : countrymedals().to_json(orient='table',index=False),
         "kj": pie_chart().to_json(orient='table',index=False),
         "juliaGDP" : myGDP().to_json(orient='table',index=False),
         "lora": corr_data().to_json(orient='table',index=False)
