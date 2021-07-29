@@ -1,9 +1,3 @@
-// Load in the JSON data
-var data = JSON.parse(corr_db).data;
-console.log(data);
-
-
-
 var svgWidth = 860;
 var svgHeight = 660;
 
@@ -94,11 +88,10 @@ function updateToolTip(chosenXAxis, circlesGroup) {
   return circlesGroup;
 };
 
+// Retrieve data from the CSV file and execute everything below
+d3.csv("assets/data/cleaned.csv").then(function (data, err) {
+  if (err) throw err;
 
-
-var data= JSON.parse(corr_db).data;
-
-console.log(data);
   // parse data
   data.forEach(function (data) {
     data.Population = +data.Population;
@@ -214,4 +207,6 @@ console.log(data);
         }
       }
     });
-
+}).catch(function (error) {
+  console.log(error);
+});

@@ -7,7 +7,8 @@ from hostsmap import hosts_map
 from britt_bar import countrymedals 
 from medal_data import pie_chart
 from line_gdp import myGDP
-from correlation import corr_data
+#from correlation import corr_data
+from lora import lora_cleaned_db
 
 #create app
 app = Flask(__name__)
@@ -23,7 +24,7 @@ def index():
         "britt" : countrymedals().to_json(orient='table',index=False),
         "kj": pie_chart().to_json(orient='table',index=False),
         "juliaGDP" : myGDP().to_json(orient='table',index=False),
-        "lora": corr_data().to_json(orient='table',index=False)
+        "lora": lora_cleaned_db().to_json(orient='table',index=False)
     }
    
     return render_template("index.html", the_data=our_info)
