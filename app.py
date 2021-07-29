@@ -7,6 +7,7 @@ from hostsmap import hosts_map
 from olydatabar import britt_bar 
 from medal_data import pie_chart
 from line_gdp import myGDP
+from correlation import corr_data
 
 #create app
 app = Flask(__name__)
@@ -21,7 +22,8 @@ def index():
        "kristajoy" : hosts_map().to_json(orient='table',index=False),
         "britt" : britt_bar().to_json(orient='table',index=False),
         "kj": pie_chart().to_json(orient='table',index=False),
-        "juliaGDP" : myGDP().to_json(orient='table',index=False)
+        "juliaGDP" : myGDP().to_json(orient='table',index=False),
+        "lora": corr_data().to_json(orient='table',index=False)
     }
    
     return render_template("index.html", the_data=our_info)

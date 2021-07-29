@@ -23,6 +23,7 @@
     integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
     crossorigin="" />
     <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <link rel="stylesheet" href="assets/css/d3Style.css">
     <script src="https://unpkg.com/d3-simple-slider"></script>
   
     <!--Code to bring db into my js bar race chart-->
@@ -32,6 +33,8 @@
     var medals_db = {{the_data.kj|tojson|safe}}
     var medal_bar_db = {{the_data.britt|tojson|safe}}//Britt's info
     var julia_gdp_db = {{the_data.juliaGDP|tojson|safe}}
+    var corr_db = {{the_data.lora|tojson|safe}}
+
     </script>
   
 </script>
@@ -141,6 +144,30 @@
       </div>
       <hr>
      </div>
+     
+<!-- Lora's Charts -->
+<div class="row">
+  <hr>
+  <div class="col-xs-12 col-md-12">
+    <h3>Correlations Between Medals Won, Population, and GDP Per Capita</h3>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12  col-md-9">
+    <div id="scatter">
+      <!-- We append our chart here. -->
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12  col-md-10">
+    <div class="article">
+      <h4>Click to toggle between Population and GDP per Capita<br>Hover over circles for information</h4>
+    </div>
+  </div>
+</div>
+<hr>
+</div>
 
 <!-- KJ's Charts -->
     <div class="row">
@@ -192,6 +219,7 @@
   <script src="static/bar.js"></script>
   <script src="static/pie.js"></script>
   <script src="static/hostsMap.js"></script>
+  <script src="static/corr.js"></script>
   
   
 </body>
