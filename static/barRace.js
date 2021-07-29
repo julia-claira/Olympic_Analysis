@@ -8,7 +8,7 @@
 var flaskRace_db=JSON.parse(bar_race_db).data;
 var gdpData=JSON.parse(julia_gdp_db).data;
 var reset=false;//resets if at end of graph
-//console.log(flaskRace);gdpData
+
 
 
 //runs through and stores all the unique countries in the list
@@ -165,7 +165,7 @@ sexFilter.on("change", addDropValues);
 //function to draw gdp graph------------------
 function gdpGraphs(allData){
 
-  console.log(d3.select("#graph_sub").text())
+  
   function findCountry(c1){
     
     var data1=[];
@@ -195,8 +195,8 @@ function gdpGraphs(allData){
   c10=findCountry(tempData[9].country);
 
   cFinal=[c1,c2,c3,c4,c5,c6,c7,c8,c9,c10];
-  console.log(cFinal)
-  createLine(cFinal)
+
+  createLine(cFinal);
 
     //LINE GRAPH DRAW
     function createLine(gdp){
@@ -533,6 +533,8 @@ function startAgain(allData){
   //reset div and values
   reset=false;
   d3.select("#simpleShapes").html("");
+  d3.select("#graphLocation").html("");
+
   
  
 
