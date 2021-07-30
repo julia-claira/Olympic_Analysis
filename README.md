@@ -25,4 +25,18 @@ Set out to create a map of all the Olympic host cities. Started out by opening a
 Next, I imported the Sqlite as JSON into my javascript file (using a flask app and a python file function) where I utized Leaflet to build my map. I went into Mapbox Studio and modified a custom map style to match the colors of the Olympic rings and make that my base map. I did a loop of the data to create two marker layers—one for summer games and one for winter games—and used the custom markers I designed for each using Adobe Illustrator and Photoshop. I also bound popups in the loop writing html for the logo to display, as well as the data for the host city the opening and closing ceremonies. Lastly, utilized CSS and a Bootstrap container to style and hold my map. 
 
 ### Analysis
-tk
+
+This dashboard can be used dynamically to research multiple different years of Olympic data along with GDP and population data. Here are a few findings we came up with. 
+
+South Korea leads in earning gold medals over the lifetime of the sport being in the Olympics (1992-2016), however China holds the largest share of medals (bronze, silver, and gold), over taking South Korea in 2004 at the Athens games. 
+
+The share of Olympic medals goes towards the United States, Germany, and Russia.
+
+Just by viewing medals won by GDP per Capita, it seems there are more factors that go into whether a country holds a larger number of medals, once a country passes a certain threshold in GDP per Capita (around 10,000).  
+
+The United States is an outlier in this case, and if a correlation test were performed the USA could possibly be left out of the equation. The USA however does have the world’s highest GDP with the highest share of medals. 
+
+Nearly all summer Olympics have been held in the Northern hemisphere, except for the Sydney games in Australia. All winter Olympics have been held in the Northern Hemisphere. The most northern summer Olympics were held in Helsinki, Finland in 1952.
+
+
+
