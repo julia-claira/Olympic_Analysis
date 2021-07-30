@@ -99,6 +99,7 @@
 
         var data = [Trace1,Trace2]; 
         var layout = {title:` Medals earned by participating countries in ${year}`,
+            showlegend: true,
             barmode: 'stack',
             xaxis: {tickangle: -45}};
         Plotly.newPlot('Bar', data, layout );
