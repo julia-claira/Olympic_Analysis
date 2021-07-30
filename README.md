@@ -1,7 +1,15 @@
 # Olympic Games Dashboard
 Group project creating a Flask app which shows a breakdown of select Olympics data. Our main datasource contained info from 1896–2016. [Source Data](https://www.kaggle.com/rio2016/olympic-games): Rio 2016 website with data files created by: GitHub user flother.
 ### Bar Race 
-tk
+In Python, filtered and cleaned the data down to what was needed for the animated Bar Chart. The goal was to show the country medals won over time, with the ability to filter by sex, sport, and medals. There were a few complications that came up. One being that the Olympics uses their own IOC, three digit country code which made it complicated to merge data between databases. Also had to do some research on how medals are counted for counteries such as Soviet Union/Russia or other countries that have gone through major shifts. Finally realized the chart included the 1906 Intercalated Games which at one point was considered the olympics, but is no longer considered as such (thank you Wikipedia).
+
+Next had to do some research how to funnel this information through flask and into javascript. This was a bit tricky at first, but finally realized that the db has to be jsonized, and then parsed in js.
+
+Using the Amchart JS Library, which contains animation functions, generated a bar chart that adds up all the medals won over time by each country. This animates starting at the earliest date the sport was held, and shows the accumaltive medals won year by year, while also showing where the Olympics was held. However dealing with 140+ countries had to figure out a way to only display the top ten countries at any one point, while still keeping track of the other countries in case they pop up in the top ten at some later date (this was done by running two parallel objects, one holding the information for all countries, and the other only the current top 10). 
+
+Once the bar chart race ends, another plotly line graph pops up showing the GDP for the top ten winners based on the filtered data selected.
+
+Finally, created a fun (which is subjective of course) little award ceremony for the top three country of the current race. This was created with svg transitions.
 ### Scatter Chart
 Using Jupyter Notebook and Pandas to combine and clean 2 CSV files containing medals won, poulation, and GDP per capita. Created scatter plot with switchable Y axis to see correlations between the number of medals won vs a countries population count or their gdp per capita.
 ### Stacked Bar Graph
