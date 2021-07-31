@@ -259,7 +259,7 @@ function gdpGraphs(allData){
         yaxis: {
           visible: true,
           title: {
-            text: 'y Axisadasfafasasd',
+            text: 'y',
             font: {
               family: 'Courier New, monospace',
               size: 1,
@@ -442,21 +442,21 @@ addDropValues(); //initiate the drop value
 
 
       
-//var allData=filterBars();    
+
 
 var resetButton=d3.select("#race");
 resetButton.on("click", function(){filterBars()})
 
-//------------------------------------------
+//-----------Julia Code and Julia Modified AMChart library-------------------------------
 
 
 
 
-// Themes begin
+
 am4core.useTheme(am4themes_animated);
-// Themes end
 
-//function to create award ceremony
+
+//Julia - This function to create award ceremony for the final winners
 function awardCeremony(allData){
   d3.select("#myChart").html("");
   
@@ -496,14 +496,7 @@ function awardCeremony(allData){
   square.append("text").attr("id","secondB").text('2').attr("x", 185+svgA).attr("y", 475).attr("fill", "#fff").attr("font-size", "70px").attr("font-weight","bold");
   square.append("text").attr("id","thirdC").text('3').attr("x", 390+svgA).attr("y", 495).attr("fill", "#fff").attr("font-size", "70px").attr("font-weight","bold");
 
-  /*
-  square.append("text").attr("id","fourth1").text("4th China").attr("x", 950).attr("y", 150);
-  square.append("text").attr("id","fourth2").text("5th China").attr("x", 550).attr("y", 170);
-  square.append("text").attr("id","fourth3").text("6th China").attr("x", 550).attr("y", 190);
-  square.append("text").attr("id","fourth4").text("7th China").attr("x", 550).attr("y", 210);
-  square.append("text").attr("id","fourth5").text("8th China").attr("x", 550).attr("y", 230);
-  square.append("text").attr("id","fourth6").text("9th China").attr("x", 550).attr("y", 250);
-  square.append("text").attr("id","fourth7").text("10th China").attr("x", 550).attr("y", 270);*/
+
 
   text1=d3.select("#first").transition();
   text1.attr("transform", "translate(0,200)").duration(2500);
@@ -526,6 +519,7 @@ function awardCeremony(allData){
 
 }
 
+//Julia Added this function in case someone restarts Olympic Filter
 
 function startAgain(allData){
   d3.select("#myChart").html("");
@@ -538,7 +532,7 @@ function startAgain(allData){
   
  
 
-  //if race is restarted in middle of current one this will kill the old one
+  //Julia -- if race is restarted in middle of current one this will kill the old one
   function incomplete(){
     chart.dispose();
     var resetButton=d3.select("#race");
@@ -547,12 +541,12 @@ function startAgain(allData){
 
   }
 
-  //sets the restart button to kill old one first
+  //Julia -- sets the restart button to kill old one first
   var resetButton=d3.select("#race");
   resetButton.on("click", function(){incomplete()})
 
 
-
+//Julia -- Filter the database here
   var filterYears=Object.keys(allData);
 
     //set subheader for graph
@@ -606,7 +600,7 @@ function startAgain(allData){
 
   d3.select("#graph_sub").html(partB+partA+partC+'<br>'+partD);
 
-
+//Amchart initiate chart
 
 var chart = am4core.create("chartdiv", am4charts.XYChart);
 chart.padding(10, 10, 50, 10);
@@ -643,7 +637,7 @@ playButton.events.on("toggled", function(event) {
     stop();
   }
 })
-//sets speed of graph and allows to slow down or speed up
+//Julia - Wanted to add speed options of graph and allows to slow down or speed up
 var speed=d3.select('input[name="speed"]:checked');
 
 var stepDuration = 1500*(1/parseInt(speed.attr("value")));
@@ -693,6 +687,7 @@ label.x=95;
 
 var interval;
 
+//Julia added a reset boolean that is triggered if graph plays all the way through
 function play(allData) {
 
   if (reset===true){
@@ -709,7 +704,7 @@ function play(allData) {
   nextYear();
 }
 
-//@$%$#@$%@##########^^$^^$^$#^#$^$%#$@$!$$@@$#@!%%#$@%@%#%#%#%#%#%#%@!@%#@%%%@##@%!%%@#@#%@!
+//Julia added options to stop after first play through and then pass options to other functions
 function stop() {
   if (interval) {
     clearInterval(interval);
@@ -739,18 +734,20 @@ function nextYear() {
 
   //if (filterYears.includes(year)){
     
-
+  //Julia harded coded a few years to skip where there were no Olympics
     if (year==1916)year=1920;//dates where there are no olympics
     if (year==1940)year=1948;//dates where there are no olympics
    
     if (yearIndex>=filterYears.length-1) {//change this to adjust year for my dataset
 
-      reset=true;
+      reset=true;//Julia if graph stops automatically reset = true
       stop();
 
     }
+
+    //Julia's Code -- so here I added code to temporarily set any country not in the top ten to 0 medals for that year - otherwise 140 countries would be displayed
     if (yearIndex<=filterYears.length-1){
-    //Julia's Code -- so here I added code to temporarily set any country not in the top ten to 0 medals for that year
+    
     var newData = allData[year];
     var tempData=newData.slice(0).sort((a, b) => (a.MEDALS > b.MEDALS) ? 1 : -1);//sorts data by number of medals
     var topTen=[];
