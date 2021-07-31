@@ -2,6 +2,9 @@
 Group project creating a Flask app which shows a breakdown of select Olympics data. Our main datasource contained info from 1896–2016. [Source Data](https://www.kaggle.com/rio2016/olympic-games): Rio 2016 website with data files created by: GitHub user flother.
 ### Bar Race 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e6fec3653b106365f2864f1fc395a4c5e7fdc1df
 In Python, filtered and cleaned the data down to what was needed for the animated Bar Chart. The goal was to show the country medals won over time, with the ability to filter by sex, sport, and medals. There were a few complications that came up. One being that the Olympics uses their own IOC, three digit country code which made it complicated to merge data between databases. Also had to do some research on how medals are counted for counteries such as Soviet Union/Russia or other countries that have gone through major shifts. Finally realized the chart included the 1906 Intercalated Games which at one point was considered the olympics, but is no longer considered as such (thank you Wikipedia).
 
 Next had to do some research how to funnel this information through flask and into javascript. This was a bit tricky at first, but finally realized that the db has to be jsonized, and then parsed in js.
@@ -11,10 +14,13 @@ Using the Amchart JS Library, which contains animation functions, generated a ba
 Once the bar chart race ends, another plotly line graph pops up showing the GDP for the top ten winners based on the filtered data selected.
 
 Finally, created a fun (which is subjective of course) little award ceremony for the top three country of the current race. This was created with svg transitions.
+<<<<<<< HEAD
 ### Pie Chart
 tk
 =======
 tk
+=======
+>>>>>>> e6fec3653b106365f2864f1fc395a4c5e7fdc1df
 ### Scatter Chart
 Using Jupyter Notebook and Pandas to combine and clean 2 CSV files containing medals won, poulation, and GDP per capita. Created scatter plot with switchable Y axis to see correlations between the number of medals won vs a countries population count or their gdp per capita.
 >>>>>>> e8e60674ca05ea955eb342bae3b6c6a96fc06130
@@ -31,4 +37,18 @@ Set out to create a map of all the Olympic host cities. Started out by opening a
 Next, I imported the Sqlite as JSON into my javascript file (using a flask app and a python file function) where I utized Leaflet to build my map. I went into Mapbox Studio and modified a custom map style to match the colors of the Olympic rings and make that my base map. I did a loop of the data to create two marker layers—one for summer games and one for winter games—and used the custom markers I designed for each using Adobe Illustrator and Photoshop. I also bound popups in the loop writing html for the logo to display, as well as the data for the host city the opening and closing ceremonies. Lastly, utilized CSS and a Bootstrap container to style and hold my map. 
 
 ### Analysis
-tk
+
+This dashboard can be used dynamically to research multiple different years of Olympic data along with GDP and population data. Here are a few findings we came up with. 
+
+South Korea leads in earning gold medals over the lifetime of the sport being in the Olympics (1992-2016), however China holds the largest share of medals (bronze, silver, and gold), over taking South Korea in 2004 at the Athens games. 
+
+The share of Olympic medals goes towards the United States, Germany, and Russia.
+
+Just by viewing medals won by GDP per Capita, it seems there are more factors that go into whether a country holds a larger number of medals, once a country passes a certain threshold in GDP per Capita (around 10,000).  
+
+The United States is an outlier in this case, and if a correlation test were performed the USA could possibly be left out of the equation. The USA however does have the world’s highest GDP with the highest share of medals. 
+
+Nearly all summer Olympics have been held in the Northern hemisphere, except for the Sydney games in Australia. All winter Olympics have been held in the Northern Hemisphere. The most northern summer Olympics were held in Helsinki, Finland in 1952.
+
+
+
