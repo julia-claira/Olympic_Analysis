@@ -1,5 +1,5 @@
 # Olympic Games Dashboard
-Group project creating a Flask app which shows a breakdown of select Olympics data. Our main datasource contained info from 1896–2016. [Source Data](https://www.kaggle.com/rio2016/olympic-games): Rio 2016 website with data files created by: GitHub user flother.
+A Flask app which shows a breakdown of select Olympics data. Our main datasource contained info from 1896–2016. [Source Data](https://www.kaggle.com/rio2016/olympic-games): Rio 2016 website with data files created by: GitHub user flother.
 ### Bar Race 
 In Python, filtered and cleaned the data down to what was needed for the animated Bar Chart. The goal was to show the country medals won over time, with the ability to filter by sex, sport, and medals. There were a few complications that came up. One being that the Olympics uses their own IOC, three digit country code which made it complicated to merge data between databases. Also had to do some research on how medals are counted for counteries such as Soviet Union/Russia or other countries that have gone through major shifts. Finally realized the chart included the 1906 Intercalated Games which at one point was considered the olympics, but is no longer considered as such (thank you Wikipedia).
 
