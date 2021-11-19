@@ -44,33 +44,34 @@ The chart included the 1906 Intercalated Games which at one point was considered
 
 ## Graphs
 
-### Bar Chart Race 
-<img align="right" src="https://github.com/julia-claira/Olympic_Analysis/blob/main/resources/olympic_bar_race.png" style="width: 60%; height: 60%">
-Using the Amchart JS Library as a foundation (which had to be heavily modified to work with the data set) shows accumalitive medals won over time. To reflect the competative nature of the Olympics, and to encourage user exploration, I created a race bar chart that shows the top ten countries at any one point. As a new country enters the top ten, it knocks another one out.<br></p>
+![Sample Graph](resources/olympic_bar_race.png)
 
+Using the Amchart JS Library as a foundation (which had to be heavily modified to work with the data set) shows accumalitive medals won over time. To reflect the competative nature of the Olympics, and to encourage user exploration, I created a race bar chart that shows the top ten countries at any one point. As a new country enters the top ten, it knocks another one out.
 
 Once the bar chart race ends, a line graph pops up showing the GDP for the top ten winners.
 
+![Sample Graph](resources/gdp_graph.png)
 
-### Scatter Chart
-Scatter plot further explores correlations between the number of medals won vs a country's population count and GDP.
+The user can further explore by year and see breakdowns by medal-type, gender, population, and host city.
 
+![Sample Graph](resources/pies.png)
+![Sample Graph](resources/map.png)
 
-### Stacked Bar Graph
-Allows the user to explore medals won for a particular Olympic year.
-
-
-### Pie Charts
-<img src="https://github.com/julia-claira/project3_group_springy_olympics/blob/main/resources/pies.png" width="300">
-Breaks down medals won for a country by gender.
-
-
-### Host City Map
-Plots the summer and winter host cities.</p>
-<img src="https://github.com/julia-claira/project3_group_springy_olympics/blob/main/resources/map.png" width="210">
+## Contributors
+The contributors to this project are:
+* [@bvmann](https://github.com/bvmann)
+* [@KDrummerGirlLB](https://github.com/DrummerGirlLB)
+* [@Claira](https://github.com/julia-claira)
+* [@KristaJoy](https://github.com/KristaJoy)
 
 
-### Contacts
+## Contact
+
+Feel free to contact me with examples or any questions via the information below:
+
+GitHub: [@julia-claira](https://api.github.com/users/julia-claira)
+
+Email: julia-claira@gmail.com
 
 
 
