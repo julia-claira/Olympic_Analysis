@@ -11,8 +11,8 @@ This dashboard encourages users to dynamically explore top medal-winning countri
 * [Tools](#Tools)
 * [Graphs](#Graphs)
 * [Data](#Data)
-* [Contributions](#Contributions)
-* [Contact](#Contact)
+* [Contributors](#Contributors)
+
 
 
 
@@ -62,15 +62,6 @@ The contributors to this project are:
 * [@KDrummerGirlLB](https://github.com/DrummerGirlLB)
 * [@Claira](https://github.com/julia-claira)
 * [@KristaJoy](https://github.com/KristaJoy)
-
-
-## Contact
-
-Feel free to contact me with examples or any questions via the information below:
-
-GitHub: [@julia-claira](https://api.github.com/users/julia-claira)
-
-Email: julia-claira@gmail.com
 
 
 
