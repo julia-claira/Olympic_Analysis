@@ -2,7 +2,7 @@
 
 ## Description 
 
-This dashboard encourages users to dynamically explore top medal-winning countries for an individual sport or overall, while comparing the respective GDP and populations.
+This dashboard encourages users to dynamically explore top medal-winning countries for an individual sport or overall Olympic, while comparing the respective GDPs and populations.
 
 
 
