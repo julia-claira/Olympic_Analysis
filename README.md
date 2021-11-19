@@ -61,13 +61,13 @@ Allows the user to explore medals won for a particular Olympic year.
 
 
 ### Pie Charts
-<img align="left" src="https://github.com/julia-claira/project3_group_springy_olympics/blob/main/resources/pies.png" width="300">
+<img src="https://github.com/julia-claira/project3_group_springy_olympics/blob/main/resources/pies.png" width="300">
 Breaks down medals won for a country by gender.
 
 
 ### Host City Map
 Plots the summer and winter host cities.
-<img align="right" src="https://github.com/julia-claira/project3_group_springy_olympics/blob/main/resources/map.png" width="210">
+<img src="https://github.com/julia-claira/project3_group_springy_olympics/blob/main/resources/map.png" width="210">
 
 
 ### Contacts
