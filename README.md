@@ -46,19 +46,22 @@ The chart included the 1906 Intercalated Games which at one point was considered
 
 ### Bar Chart Race 
 <img align="right" src="https://github.com/julia-claira/Olympic_Analysis/blob/main/resources/olympic_bar_race.png" style="width: 65%; height: 65%">
-Using the Amchart JS Library as a foundation (which had to be heavily modified to work with the data set) shows accumalitive medals won over time. To reflect the competative nature of the Olympics, and to encourage user exploration, I created a race bar chart that shows the top ten countries at any one point. As a new country enters the top ten, it knocks another one out.
+Using the Amchart JS Library as a foundation (which had to be heavily modified to work with the data set) shows accumalitive medals won over time. To reflect the competative nature of the Olympics, and to encourage user exploration, I created a race bar chart that shows the top ten countries at any one point. As a new country enters the top ten, it knocks another one out.<br>
 
 Once the bar chart race ends, a line graph pops up showing the GDP for the top ten winners.
 
 ### Scatter Chart
 Scatter plot further explores correlations between the number of medals won vs a country's population count and GDP.
+
 ### Stacked Bar Graph
 Allows the user to explore medals won for a particular Olympic year.
+
 ### Pie Charts
 <img align="left" src="https://github.com/julia-claira/project3_group_springy_olympics/blob/main/resources/pies.png" width="300">
 Breaks down medals won for a country by gender.
+
 ### Host City Map
-Plots the host cities.
+Plots the summer and winter host cities.
 <img align="right" src="https://github.com/julia-claira/project3_group_springy_olympics/blob/main/resources/map.png" width="210">
 
 
