@@ -37,7 +37,7 @@ Using the Amchart JS Library as a foundation (which had to be heavily modified t
 
 Once the bar chart race ends, a line graph pops up showing the GDP for the top ten winners.
 
-![Sample Graph](resources/gdp_graph.png)
+![Sample Graph](resources/gdp_graph1.png)
 
 The user can further explore by year and see breakdowns by medal-type, gender, population, and host city.
 
