@@ -98,48 +98,50 @@
               16 <input type="radio" name = "speed" value="10">
               <br><br>
   
-              <button type="button" id='race'>Start Medal Race</button></center>
+              <button type="button" id='race'>Start Race</button></center>
             </div>
           </div>
         </div>
-        <div class="col-md-7">
+        <div class="col-md-8">
           <div id="graphLocation"></div>
         </div>
-        <div class="col-md-2"></div>
+        
   
       </div>
   
-  
-  
-      <div class=row></div>
+      <div class=row>
+      
+
+        <!--<center><h2 id="graph_sub">The Top Ten Medal Winning Countries</h2></center>-->
+
+
+      </div>
+      <div class=row>
+        
+      </div>
         <div class="col-md-1"></div>
         <div class="col-md-10">
-          <center><h2 id="graph_sub">The Top Ten Country Medal Count Over Time</h2></center>
+          <!--<center><h2 id="graph_sub">The Top Ten Country Medal Winners</h2></center>-->
           <div id="simpleShapes" width="100%" height="300px">
-            <svg width="100%" height="533">
-              <circle cx="600" cy="225" r="100" fill=#A77044 stroke=#7f5432 stroke-width=6></circle>
-              <text x="548" y="290" fill="#7f5432" font-size="180px", font-weight="bold">3</text>
-              <circle cx="325" cy="210" r="100" fill=#A7A7AD stroke=#828287 stroke-width=6></circle>
-              <text x="275" y="270" fill="#828287" font-size="180px", font-weight="bold">2</text>
-              <circle cx="465" cy="290" r="110" fill=#D6AF36 stroke=#a4862a stroke-width=6></circle>
-              <text x="415" y="350" fill="#a4862a" font-size="180px", font-weight="bold">1</text>
-                .attr("width", 170).attr("height", 120).attr("x", 225+svgA).attr("y", 320).style("stroke", "purple").style("fill","#4880C4");
-            </svg>
+            Select Sport(s) to Begin
           </div>
             <div id=myChart></div>
         
         </div>
         <div class="col-md-1"></div>
-      </div>
+
  
   
 <!-- Britt's Graph -->
+<div class="row"></div>
+<hr>
+<div class="row"><center><h3 id="graph_sub">Medal Total by Year</h3></center></div>
     <div class="row">
 
-      <hr>
+  
       <div class="col-md-3"></div>
-      <div class="col-md-7">
-          <div class="well">
+      <div class="col-md-9">
+          <div class="none">
             <h5>Year</h5>
             <select id="seldDataset" onchange="changeDate(this.value)"></select>
             <div id="Bar"></div>
@@ -175,7 +177,7 @@
   </div>
 </div>
 <hr>
-</div>
+
 
 <!-- KJ's Charts -->
     <div class="row">
@@ -217,7 +219,7 @@
   <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
   <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
   <script src="https://d3js.org/d3.v5.min.js"></script>   
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-2.6.3.min.js"></script>
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="

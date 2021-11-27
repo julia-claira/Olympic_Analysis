@@ -2,13 +2,13 @@ from flask import Flask, render_template, redirect
 from sqlalchemy import inspect
 
 #import our functions
-from bar_race import julia_bar_race
-from hostsmap import hosts_map
-from britt_bar import countrymedals 
-from medal_data import pie_chart
-from line_gdp import myGDP
+from module_bar_race import julia_bar_race
+from module_hostsmap import hosts_map
+from module_britt_bar import countrymedals 
+from module_medal_data import pie_chart
+from module_line_gdp import myGDP
 #from correlation import corr_data
-from lora import lora_cleaned_db
+from module_correlation import lora_cleaned_db
 
 #create app
 app = Flask(__name__)

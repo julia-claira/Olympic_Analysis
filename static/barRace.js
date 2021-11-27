@@ -210,7 +210,6 @@ function gdpGraphs(allData){
             showInLegend: true,
             x: gdp[i].map(row=>row['Year']),
             y: gdp[i].map(row=>row['Value']),
-            yaxis: 'y2',
             name: `${gdp[i][0].myCNames}`,
         };
         traces.push(trace1);
@@ -219,18 +218,18 @@ function gdpGraphs(allData){
       var myData=traces;
 
       //Layout and Plot
-      var layout = {
-        autosize: false,
+      var layoutt = {
+        autosize: true,
   
         margin: {
-            l: 70,
-            r: 200,
-            b: 100,
-            t: 130,
-            pad: 4
+            l: 140,
+            r: 240,
+            b: 140,
+            t: 140,
+            pad: 10
         },
         title: {
-          text:"GDP (USD) For Below Top Ten Medal Winners",
+          text:"Top Ten Medal Winners",
           font: {
             family: 'Courier New, monospace',
             size: 24
@@ -239,38 +238,23 @@ function gdpGraphs(allData){
           x: 0.05,
         },
         xaxis: {
-          title: {
-            text: '',
-            font: {
-              family: 'Courier New, monospace',
-              size: 18,
-              color: '#7f7f7f'
-            }
-          },
+          title: 'Year'
+        },
+        yaxis: {
+          title: 'GDP (USD)'
         },
         legend: {
           y: 1,
           x: 1.1,
           bgcolor: 'transparent',
         },
-        xanchor: 'left',
-        display:'none',
-        hovermode:'x unified',
-        yaxis: {
-          visible: true,
-          title: {
-            text: 'y',
-            font: {
-              family: 'Courier New, monospace',
-              size: 1,
-              color: ''
-            }
-          }
-        }
+        display: 'none',
+        hovermode:'x unified'
       };
 
       
-      Plotly.newPlot(graphLocation, myData,layout=layout,{displayModeBar: false});
+      Plotly.newPlot('graphLocation', myData,layoutt,{displayModeBar: false});
+      console.log(myData)
 
 
 }
