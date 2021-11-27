@@ -218,18 +218,18 @@ function gdpGraphs(allData){
       var myData=traces;
 
       //Layout and Plot
-      var layoutt = {
+      var layout = {
         autosize: true,
   
         margin: {
-            l: 140,
-            r: 240,
-            b: 140,
-            t: 140,
-            pad: 10
+            l:150,
+            r: 150,
+            b: 55,
+            t: 75,
+            pad: 0
         },
         title: {
-          text:"Top Ten Medal Winners",
+          text:"GDP of Top 10 Countries",
           font: {
             family: 'Courier New, monospace',
             size: 24
@@ -253,7 +253,7 @@ function gdpGraphs(allData){
       };
 
       
-      Plotly.newPlot('graphLocation', myData,layoutt,{displayModeBar: false});
+      Plotly.newPlot('graphLocation', myData,layout,{displayModeBar: false});
       console.log(myData)
 
 
@@ -582,7 +582,7 @@ function startAgain(allData){
     
 
 
-  d3.select("#graph_sub").html(partB+partA+partC+'<br>'+partD);
+  d3.select("#graph_sub").html('Top 10 Countries in <br>'+partB+partA+partC);
 
 //Amchart initiate chart
 

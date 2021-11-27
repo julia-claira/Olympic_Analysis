@@ -68,10 +68,10 @@
       <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-3">
-          <p></p><br><br>
+          <p></p><br><br><p></p><p><br></p><p><br></p>
           <div class="panel panel-danger">
             <div class="panel-heading">
-              <center> <h3 class="panel-title">Medal Winners Filter</h3></center>
+              <center> <h3 class="panel-title">Games Filter</h3></center>
             </div>
             <div id="sample-metadata" class="panel-body">
               <input type="checkbox" id="Summer" name="Summer" value="Summer" checked>
@@ -103,7 +103,15 @@
           </div>
         </div>
         <div class="col-md-8">
-          <div id="graphLocation"></div>
+          <div class="row"><center><h2 id="graph_sub"></h2></center></div>
+          <div id="simpleShapes" width="100%" height="300px">
+            <svg width="100%" height="233">
+
+              <text x="300" y="130" fill="gray" font-size="18px", font-weight="bold">Choose Sport(s) to Begin Top 10 Medal Race</text>
+            </svg>
+          </div>
+          <div id=myChart></div>
+          
         </div>
         
   
@@ -111,7 +119,7 @@
   
       <div class=row>
       
-
+        
         <!--<center><h2 id="graph_sub">The Top Ten Medal Winning Countries</h2></center>-->
 
 
@@ -122,10 +130,8 @@
         <div class="col-md-1"></div>
         <div class="col-md-10">
           <!--<center><h2 id="graph_sub">The Top Ten Country Medal Winners</h2></center>-->
-          <div id="simpleShapes" width="100%" height="300px">
-            Select Sport(s) to Begin
-          </div>
-            <div id=myChart></div>
+
+          <div id="graphLocation"></div>
         
         </div>
         <div class="col-md-1"></div>
@@ -135,7 +141,7 @@
 <!-- Britt's Graph -->
 <div class="row"></div>
 <hr>
-<div class="row"><center><h3 id="graph_sub">Medal Total by Year</h3></center></div>
+
     <div class="row">
 
   
