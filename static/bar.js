@@ -20,11 +20,9 @@
   
 
     function changeDate(x){
-        //d3.csv(olympicURL).then(function(olydata){
-        //var olyData = olydata
-        //console.log(x)
+
         var olyData=JSON.parse(medal_bar_db).data;
-        //console.log(olyData)
+
         function findData (f){
         return f.Year == x
        
@@ -35,7 +33,7 @@
         console.log(d) 
         getData(d);
 
-//});  
+
     };
 
     function getData(d){
@@ -77,6 +75,7 @@
 
         var temp;
 
+        //sorts based on medals
         for (var i = 0; i < summerMedal.length; i++) {
             for (var j = i + 1; j < summerMedal.length; j++) {
                 if (summerMedal[i] < summerMedal[j]) {
@@ -87,6 +86,10 @@
                     temp = summerC[i];
                     summerC[i] = summerC[j];
                     summerC[j] = temp;
+
+                    temp = summerName[i];
+                    summerName[i] = summerName[j];
+                    summerName[j] = temp;
                 }
             }
         }
@@ -102,9 +105,22 @@
                     temp = winterC[i];
                     winterC[i] = winterC[j];
                     winterC[j] = temp;
+
+                    temp = winterName[i];
+                    winterName[i] = winterName[j];
+                    winterName[j] = temp;
                 }
             }
         }
+
+        //splices to reduce number of medals
+        winterC.splice(15)
+        winterMedal.splice(15)
+        winterName.splice(15)
+        summerC.splice(15)
+        summerMedal.splice(15)
+        summerName.splice(15)
+
 
         var Trace1 = {
             x:summerC,
@@ -112,7 +128,7 @@
             text: summerName,
             name:'Summer Olympics',
             marker: { 
-                color: 'green'
+                color: '#179A13'
             },
             type: 'bar'
         };
@@ -123,17 +139,25 @@
             text: winterName,
             name:'Winter Olympics',
             marker: { 
-                color: 'blue'
+                color: '#247291'
             },
             type: 'bar'
         };
 
         var data = [Trace1,Trace2]; 
-        var layout = {title:` Medals earned by participating countries in ${year}`,
+        var layout = {
+            title: {
+                text: `Medals Earned by Countries in ${year}`,
+                font: {
+                  family: 'Courier New, monospace',
+                  size: 28
+                },
+            },
             showlegend: true,
             barmode: 'stack',
             xaxis: {tickangle: -45}};
-        Plotly.newPlot('Bar', data, layout );
+
+        Plotly.newPlot('Bar', data,layout,{displayModeBar: false});
 
 
     };
