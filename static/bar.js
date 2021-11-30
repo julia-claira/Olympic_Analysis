@@ -6,7 +6,6 @@
         1964, 1968, 1972, 1976, 1980, 1984, 1988, 1992, 1994, 1996, 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2014, 2016]
     var years = filterYears.map (x => x.toString());
     
-    //console.log(years)
   
     var dropDown= d3.select("#seldDataset");
     dropDown.selectAll("option")
@@ -16,6 +15,8 @@
         .text(function(d) {
             return `${d}`
         });
+
+    changeDate(2016)
   
 
     function changeDate(x){
@@ -58,6 +59,7 @@
         summerC = []
         summerMedal = []
         summerName = []
+        
         for (i=0;i<season.length;i++){
             if (season[i] == "Winter"){
                 winterC.push(country[i])
@@ -73,7 +75,36 @@
 
         };
 
-        console.log(summerMedal)
+        var temp;
+
+        for (var i = 0; i < summerMedal.length; i++) {
+            for (var j = i + 1; j < summerMedal.length; j++) {
+                if (summerMedal[i] < summerMedal[j]) {
+                    temp = summerMedal[i];
+                    summerMedal[i] = summerMedal[j];
+                    summerMedal[j] = temp;
+
+                    temp = summerC[i];
+                    summerC[i] = summerC[j];
+                    summerC[j] = temp;
+                }
+            }
+        }
+
+
+        for (var i = 0; i < winterMedal.length; i++) {
+            for (var j = i + 1; j < winterMedal.length; j++) {
+                if (winterMedal[i] < winterMedal[j]) {
+                    temp = winterMedal[i];
+                    winterMedal[i] = winterMedal[j];
+                    winterMedal[j] = temp;
+
+                    temp = winterC[i];
+                    winterC[i] = winterC[j];
+                    winterC[j] = temp;
+                }
+            }
+        }
 
         var Trace1 = {
             x:summerC,

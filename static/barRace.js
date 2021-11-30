@@ -217,22 +217,27 @@ function gdpGraphs(allData){
 
       var myData=traces;
 
+      var output=d3.select("#graph_sub").text()
+      output=output.replace('Top 10','')
+      output = output.replace(/[0-9]/g, '');
+      output=output.replace(' -','')
+
       //Layout and Plot
       var layout = {
         autosize: true,
   
         margin: {
-            l:150,
-            r: 150,
+            l:120,
+            r: 180,
             b: 55,
             t: 75,
             pad: 0
         },
         title: {
-          text:"GDP of Top 10 Countries",
+          text: 'GDP for Top 10'+output,
           font: {
             family: 'Courier New, monospace',
-            size: 24
+            size: 28
           },
           xref: 'paper',
           x: 0.05,
@@ -254,7 +259,6 @@ function gdpGraphs(allData){
 
       
       Plotly.newPlot('graphLocation', myData,layout,{displayModeBar: false});
-      console.log(myData)
 
 
 }
@@ -769,7 +773,7 @@ function nextYear() {
     label.text = `${cityOlympics(year)} ${year.toString()}`;
     label.align="center";
     label.y = 450;
-    label.fontSize=40;
+    label.fontSize=20;
     //d3.select("#graph_name").html(`${cityOlympics(year)} ${year.toString()}`)
 
     categoryAxis.zoom({ start: 0, end: itemsWithNonZero / categoryAxis.dataItems.length });
