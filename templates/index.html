@@ -142,11 +142,12 @@
           <hr>
           <p><br></p>
             <div class="col-md-1"></div>
-            <div class="col-md-9">
-              <h2><center>Host Cities</center></h2>
+            <div class="col-md-10">
+ 
+              <center><p style="color:blue;font-size:28px;">Host Cities</p> </center>
                 <div id="map"></div>
             </div>
-            <div class="col-md-2"></div>
+            <div class="col-md-1"></div>
           </div>      
 
 <!-- Britt's Graph -->
@@ -155,12 +156,14 @@
 
     <div class="row">
 
-  
-      <div class="col-md-1"></div>
+      <div class="col-md-1">c</div>
+      <div class="col-md-1">
+        <h5>Year</h5>
+        <select id="seldDataset" onchange="changeDate(this.value)"></select>
+      </div>
       <div class="col-md-10">
+
           <div class="none">
-            <h5>Year</h5>
-            <select id="seldDataset" onchange="changeDate(this.value)"></select>
             <div id="Bar"></div>
           </div>
       </div>
