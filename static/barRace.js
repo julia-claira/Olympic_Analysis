@@ -236,7 +236,6 @@ function gdpGraphs(allData){
         title: {
           text: 'GDP for Top 10'+output,
           font: {
-            family: 'Courier New, monospace',
             size: 28
           },
           xref: 'paper',

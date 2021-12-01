@@ -149,7 +149,6 @@
             title: {
                 text: `Medals Earned by Countries in ${year}`,
                 font: {
-                  family: 'Courier New, monospace',
                   size: 28
                 },
             },
