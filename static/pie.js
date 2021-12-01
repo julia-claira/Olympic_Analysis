@@ -21,6 +21,8 @@ countryNames.forEach(country => {
      row.text(country);
 });
 
+d3.select('#selCountry').property('value', 'United States');
+
 
 // Create a function to add medal data together
 function sumMedals(data){
@@ -201,15 +203,5 @@ function optionChanged() {
 
 // INIT function for charts on load
 
-function init() {
-  var idOnLoad = "Afghanistan";
-  
-  var country1 = medalsData.filter(obj => obj.country_name === idOnLoad);
-  var data1 = sumMedals(country1);
-  var data2 = sumGender(country1);
-  return createPie(data1), createPie2(data2) ;
 
-
-}
-
-init();
+optionChanged()
