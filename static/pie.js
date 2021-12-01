@@ -203,5 +203,16 @@ function optionChanged() {
 
 // INIT function for charts on load
 
+function init() {
+  var idOnLoad = "United States";
+  
+  var country1 = medalsData.filter(obj => obj.country_name === idOnLoad);
+  var data1 = sumMedals(country1);
+  var data2 = sumGender(country1);
+  return createPie(data1), createPie2(data2) ;
 
-optionChanged()
+
+}
+
+
+init();
